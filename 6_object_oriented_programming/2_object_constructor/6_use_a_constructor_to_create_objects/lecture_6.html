@@ -1,0 +1,34 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use a Constructor to Create Objects</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Here&apos;s the <code>Bird</code> constructor from the previous challenge:</p><p></p><pre class=" language-js">function Bird() {
+  this.name = &quot;Albert&quot;;
+  this.color  = &quot;blue&quot;;
+  this.numLegs = 2;
+  // &quot;this&quot; inside the constructor always refers to the object being created
+}
+
+let blueBird = new Bird();
+</pre><p></p>
+<p>Notice that the <code>new</code> operator is used when calling a constructor. This tells JavaScript to create a new instance of <code>Bird</code> called <code>blueBird</code>. Without the <code>new</code> operator, <code>this</code> inside the constructor would not point to the newly created object, giving unexpected results.
+Now <code>blueBird</code> has all the properties defined inside the <code>Bird</code> constructor:</p>
+<p></p><pre class=" language-js">blueBird.name; // =&gt; Albert
+blueBird.color; // =&gt; blue
+blueBird.numLegs; // =&gt; 2
+</pre><p></p>
+<p>Just like any other object, its properties can be accessed and modified:</p>
+<p></p><pre class=" language-js">blueBird.name = &apos;Elvira&apos;;
+blueBird.name; // =&gt; Elvira
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use the <code>Dog</code> constructor from the last lesson to create a new instance of <code>Dog</code>, assigning it to a variable <code>hound</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>hound</code> should be created using the <code>Dog</code> constructor.</li><li>🧪 Your code should use the <code>new</code> operator to create an instance of <code>Dog</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>
