@@ -1,0 +1,43 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Logical Order in If Else Statements</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Order is important in <code>if</code>, <code>else if</code> statements.</p>
+<p>The function is executed from top to bottom so you will want to be careful of what statement comes first.</p>
+<p>Take these two functions as an example.</p>
+<p>Here&apos;s the first:</p><p></p><pre class=" language-js">function foo(x) {
+  if (x &lt; 1) {
+    return &quot;Less than one&quot;;
+  } else if (x &lt; 2) {
+    return &quot;Less than two&quot;;
+  } else {
+    return &quot;Greater than or equal to two&quot;;
+  }
+}
+</pre><p></p>
+<p>And the second just switches the order of the statements:</p>
+<p></p><pre class=" language-js">function bar(x) {
+  if (x &lt; 2) {
+    return &quot;Less than two&quot;;
+  } else if (x &lt; 1) {
+    return &quot;Less than one&quot;;
+  } else {
+    return &quot;Greater than or equal to two&quot;;
+  }
+}
+</pre><p></p>
+<p>While these two functions look nearly identical if we pass a number to both we get different outputs.</p>
+<p></p><pre class=" language-js">foo(0) // &quot;Less than one&quot;
+bar(0) // &quot;Less than two&quot;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Change the order of logic in the function so that it will return the correct statements in all cases.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>orderMyLogic(4)</code> should return &quot;Less than 5&quot;</li><li>🧪 <code>orderMyLogic(6)</code> should return &quot;Less than 10&quot;</li><li>🧪 <code>orderMyLogic(11)</code> should return &quot;Greater than or equal to 10&quot;</li>
+            </ul>
+        </div>
+    </div>
+</div>
