@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Record Collection</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You are given a JSON object representing a part of your musical album collection. Each album has several properties and a unique id number as its key. Not all albums have complete information.</p>
+<p>Write a function which takes an album&apos;s <code>id</code> (like <code>2548</code>), a property <code>prop</code> (like <code>&quot;artist&quot;</code> or <code>&quot;tracks&quot;</code>), and a <code>value</code> (like <code>&quot;Addicted to Love&quot;</code>) to modify the data in this collection.</p>
+<p>If <code>prop</code> isn&apos;t <code>&quot;tracks&quot;</code> and <code>value</code> isn&apos;t empty (<code>&quot;&quot;</code>), update or set the <code>value</code> for that record album&apos;s property.</p>
+<p>Your function must always return the entire collection object.</p>
+<p>There are several rules for handling incomplete data:</p>
+<p>If <code>prop</code> is <code>&quot;tracks&quot;</code> but the album doesn&apos;t have a <code>&quot;tracks&quot;</code> property, create an empty array before adding the new value to the album&apos;s corresponding property.</p>
+<p>If <code>prop</code> is <code>&quot;tracks&quot;</code> and <code>value</code> isn&apos;t empty (<code>&quot;&quot;</code>), push the <code>value</code> onto the end of the album&apos;s existing <code>tracks</code> array.</p>
+<p>If <code>value</code> is empty (<code>&quot;&quot;</code>), delete the given <code>prop</code> property from the album.</p><p><strong>Hints</strong><br>Use <code>bracket notation</code> when <a href="learn/javascript-algorithms-and-data-structures/basic-javascript/accessing-object-properties-with-variables" target="_blank">accessing object properties with variables</a>.</p>
+<p>Push is an array method you can read about on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">Mozilla Developer Network</a>.</p>
+<p>You may refer back to <a href="learn/javascript-algorithms-and-data-structures/basic-javascript/manipulating-complex-objects" target="_blank">Manipulating Complex Objects</a> Introducing JavaScript Object Notation (JSON) for a refresher.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should not change the <code>collection</code> object&apos;s initialization</li><li>🧪 After <code>updateRecords(5439, &quot;artist&quot;, &quot;ABBA&quot;)</code>, <code>artist</code> should be <code>&quot;ABBA&quot;</code></li><li>🧪 After <code>updateRecords(5439, &quot;tracks&quot;, &quot;Take a Chance on Me&quot;)</code>, <code>tracks</code> should have <code>&quot;Take a Chance on Me&quot;</code> as the last element.</li><li>🧪 After <code>updateRecords(2548, &quot;artist&quot;, &quot;&quot;)</code>, <code>artist</code> should not be set</li><li>🧪 After <code>updateRecords(1245, &quot;tracks&quot;, &quot;Addicted to Love&quot;)</code>, <code>tracks</code> should have <code>&quot;Addicted to Love&quot;</code> as the last element.</li><li>🧪 After <code>updateRecords(2468, &quot;tracks&quot;, &quot;Free&quot;)</code>, <code>tracks</code> should have <code>&quot;1999&quot;</code> as the first element.</li><li>🧪 After <code>updateRecords(2548, &quot;tracks&quot;, &quot;&quot;)</code>, <code>tracks</code> should not be set</li><li>🧪 After <code>updateRecords(1245, &quot;album&quot;, &quot;Riptide&quot;)</code>, <code>album</code> should be <code>&quot;Riptide&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>
