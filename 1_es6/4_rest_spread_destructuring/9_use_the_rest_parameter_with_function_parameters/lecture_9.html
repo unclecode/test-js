@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use the Rest Parameter with Function Parameters</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In order to help us create more flexible functions, ES6 introduces the <dfn>rest parameter</dfn> for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function.</p>
+<p>Check out this code:</p><p></p><pre class=" language-js">function howMany(...args) {
+  return &quot;You have passed &quot; + args.length + &quot; arguments.&quot;;
+}
+console.log(howMany(0, 1, 2)); // You have passed 3 arguments.
+console.log(howMany(&quot;string&quot;, null, [1, 2, 3], { })); // You have passed 4 arguments.
+</pre><p></p>
+<p>The rest parameter eliminates the need to check the <code>args</code> array and allows us to apply <code>map()</code>, <code>filter()</code> and <code>reduce()</code> on the parameters array.</p>
+</section></div><hr><div><section id="instructions">
+<p>Modify the function <code>sum</code> using the rest parameter in such a way that the function <code>sum</code> is able to take any number of arguments and return their sum.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The result of <code>sum(0,1,2)</code> should be 3</li><li>🧪 The result of <code>sum(1,2,3,4)</code> should be 10</li><li>🧪 The result of <code>sum(5)</code> should be 5</li><li>🧪 The result of <code>sum()</code> should be 0</li><li>🧪 The <code>sum</code> function should use the <code>...</code> rest parameter on the <code>args</code> parameter.</li>
+            </ul>
+        </div>
+    </div>
+</div>
