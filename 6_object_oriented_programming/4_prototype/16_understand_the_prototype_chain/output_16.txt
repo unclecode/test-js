@@ -1,0 +1,7 @@
+SyntaxError: unknown: Unexpected token (10:0)
+
+   8 | 
+   9 | // Fix the code below so that it evaluates to true
+> 10 | ???.isPrototypeOf(Dog.prototype);
+     | ^
+  11 | 

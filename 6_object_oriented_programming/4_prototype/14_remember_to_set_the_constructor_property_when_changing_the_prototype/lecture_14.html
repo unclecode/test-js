@@ -1,0 +1,31 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Remember to Set the Constructor Property when Changing the Prototype</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>There is one crucial side effect of manually setting the prototype to a new object. It erases the <code>constructor</code> property! This property can be used to check which constructor function created the instance, but since the property has been overwritten, it now gives false results:</p><p></p><pre class=" language-js">duck.constructor === Bird; // false -- Oops
+duck.constructor === Object; // true, all objects inherit from Object.prototype
+duck instanceof Bird; // true, still works
+</pre><p></p>
+<p>To fix this, whenever a prototype is manually set to a new object, remember to define the <code>constructor</code> property:</p>
+<p></p><pre class=" language-js">Bird.prototype = {
+  constructor: Bird, // define the constructor property
+  numLegs: 2,
+  eat: function() {
+    console.log(&quot;nom nom nom&quot;);
+  },
+  describe: function() {
+    console.log(&quot;My name is &quot; + this.name); 
+  }
+};
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Define the <code>constructor</code> property on the <code>Dog</code> <code>prototype</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>Dog.prototype</code> should set the <code>constructor</code> property.</li>
+            </ul>
+        </div>
+    </div>
+</div>
