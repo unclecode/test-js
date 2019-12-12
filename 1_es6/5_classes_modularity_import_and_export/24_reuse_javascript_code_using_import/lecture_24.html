@@ -1,0 +1,21 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Reuse Javascript Code Using import</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p><code>import</code> allows you to choose which parts of a file or module to load. In the previous lesson, the examples exported <code>add</code> from the <code>math_functions.js</code> file. Here&apos;s how you can import it to use in another file:</p><p></p><pre class=" language-js">import { add } from &apos;./math_functions.js&apos;;
+</pre><p></p>
+<p>Here, <code>import</code> will find <code>add</code> in <code>math_functions.js</code>, import just that function for you to use, and ignore the rest. The <code>./</code> tells the import to look for the <code>math_functions.js</code> file in the same folder as the current file. The relative file path (<code>./</code>) and file extension (<code>.js</code>) are required when using import in this way.</p>
+<p>You can import more than one item from the file by adding them in the <code>import</code> statement like this:</p>
+<p></p><pre class=" language-js">import { add, subtract } from &apos;./math_functions.js&apos;;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Add the appropriate <code>import</code> statement that will allow the current file to use the <code>uppercaseString</code> and <code>lowercaseString</code> functions you exported in the previous lesson. These functions are in a file called <code>string_functions.js</code>, which is in the same directory as the current file.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should properly import <code>uppercaseString</code>.</li><li>🧪 You should properly import <code>lowercaseString</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

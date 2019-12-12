@@ -1,0 +1,1 @@
+"ReferenceError: Vegetable is not defined"
