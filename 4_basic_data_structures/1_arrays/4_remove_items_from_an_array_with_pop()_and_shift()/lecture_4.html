@@ -1,0 +1,29 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Remove Items from an Array with pop() and shift()</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Both <code>push()</code> and <code>unshift()</code> have corresponding methods that are nearly functional opposites: <code>pop()</code> and <code>shift()</code>. As you may have guessed by now, instead of adding, <code>pop()</code> <em>removes</em> an element from the end of an array, while <code>shift()</code> removes an element from the beginning. The key difference between <code>pop()</code> and <code>shift()</code> and their cousins <code>push()</code> and <code>unshift()</code>, is that neither method takes parameters, and each only allows an array to be modified by a single element at a time.</p>
+<p>Let&apos;s take a look:</p><p></p><pre class=" language-js">let greetings = [&apos;whats up?&apos;, &apos;hello&apos;, &apos;see ya!&apos;];
+
+greetings.pop();
+// now equals [&apos;whats up?&apos;, &apos;hello&apos;]
+
+greetings.shift();
+// now equals [&apos;hello&apos;]
+</pre><p></p>
+<p>We can also return the value of the removed element with either method like this:</p>
+<p></p><pre class=" language-js">let popped = greetings.pop();
+// returns &apos;hello&apos;
+// greetings now equals []
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>We have defined a function, <code>popShift</code>, which takes an array as an argument and returns a new array. Modify the function, using <code>pop()</code> and <code>shift()</code>, to remove the first and last elements of the argument array, and assign the removed elements to their corresponding variables, so that the returned array contains their values.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>popShift([&quot;challenge&quot;, &quot;is&quot;, &quot;not&quot;, &quot;complete&quot;])</code> should return <code>[&quot;challenge&quot;, &quot;complete&quot;]</code></li><li>🧪 The <code>popShift</code> function should utilize the <code>pop()</code> method</li><li>🧪 The <code>popShift</code> function should utilize the <code>shift()</code> method</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Add Items to an Array with push() and unshift()</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>An array&apos;s length, like the data types it can contain, is not fixed. Arrays can be defined with a length of any number of elements, and elements can be added or removed over time; in other words, arrays are <dfn>mutable</dfn>. In this challenge, we will look at two methods with which we can programmatically modify an array: <code>Array.push()</code> and <code>Array.unshift()</code>.</p>
+<p>Both methods take one or more elements as parameters and add those elements to the array the method is being called on; the <code>push()</code> method adds elements to the end of an array, and <code>unshift()</code> adds elements to the beginning. Consider the following:</p><p></p><pre class=" language-js">let twentyThree = &apos;XXIII&apos;;
+let romanNumerals = [&apos;XXI&apos;, &apos;XXII&apos;];
+
+romanNumerals.unshift(&apos;XIX&apos;, &apos;XX&apos;);
+// now equals [&apos;XIX&apos;, &apos;XX&apos;, &apos;XXI&apos;, &apos;XXII&apos;]
+
+romanNumerals.push(twentyThree);
+// now equals [&apos;XIX&apos;, &apos;XX&apos;, &apos;XXI&apos;, &apos;XXII&apos;, &apos;XXIII&apos;]Notice that we can also pass variables, which allows us even greater flexibility in dynamically modifying our array&apos;s data.
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>We have defined a function, <code>mixedNumbers</code>, which we are passing an array as an argument. Modify the function by using <code>push()</code> and <code>unshift()</code> to add <code>&apos;I&apos;, 2, &apos;three&apos;</code> to the beginning of the array and <code>7, &apos;VIII&apos;, 9</code> to the end so that the returned array contains representations of the numbers 1-9 in order.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>mixedNumbers([&quot;IV&quot;, 5, &quot;six&quot;])</code> should now return <code>[&quot;I&quot;, 2, &quot;three&quot;, &quot;IV&quot;, 5, &quot;six&quot;, 7, &quot;VIII&quot;, 9]</code></li><li>🧪 The <code>mixedNumbers</code> function should utilize the <code>push()</code> method</li><li>🧪 The <code>mixedNumbers</code> function should utilize the <code>unshift()</code> method</li>
+            </ul>
+        </div>
+    </div>
+</div>

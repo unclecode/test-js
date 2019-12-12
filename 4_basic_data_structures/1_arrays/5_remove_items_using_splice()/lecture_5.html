@@ -1,0 +1,28 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Remove Items Using splice()</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Ok, so we&apos;ve learned how to remove elements from the beginning and end of arrays using <code>shift()</code> and <code>pop()</code>, but what if we want to remove an element from somewhere in the middle? Or remove more than one element at once? Well, that&apos;s where <code>splice()</code> comes in. <code>splice()</code> allows us to do just that: <strong>remove any number of consecutive elements</strong> from anywhere in an array.</p><p><code>splice()</code> can take up to 3 parameters, but for now, we&apos;ll focus on just the first 2. The first two parameters of <code>splice()</code> are integers which represent indexes, or positions, of the array that <code>splice()</code> is being called upon. And remember, arrays are <em>zero-indexed</em>, so to indicate the first element of an array, we would use <code>0</code>. <code>splice()</code>&apos;s first parameter represents the index on the array from which to begin removing elements, while the second parameter indicates the number of elements to delete. For example:</p><p></p><pre class=" language-js">let array = [&apos;today&apos;, &apos;was&apos;, &apos;not&apos;, &apos;so&apos;, &apos;great&apos;];
+
+array.splice(2, 2);
+// remove 2 elements beginning with the 3rd element
+// array now equals [&apos;today&apos;, &apos;was&apos;, &apos;great&apos;]
+</pre><p></p>
+<p><code>splice()</code> not only modifies the array it&apos;s being called on, but it also returns a new array containing the value of the removed elements:</p>
+<p></p><pre class=" language-js">let array = [&apos;I&apos;, &apos;am&apos;, &apos;feeling&apos;, &apos;really&apos;, &apos;happy&apos;];
+
+let newArray = array.splice(3, 2);
+// newArray equals [&apos;really&apos;, &apos;happy&apos;]
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>We&apos;ve initialized an array <code>arr</code>. Use <code>splice()</code> to remove elements from <code>arr</code>, so that it only contains elements that sum to the value of <code>10</code>.</p>
+</section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should not change the original line of <code>const arr = [2, 4, 5, 1, 7, 5, 2, 1];</code>.</li><li>🧪 <code>arr</code> should only contain elements that sum to <code>10</code>.</li><li>🧪 Your code should utilize the <code>splice()</code> method on <code>arr</code>.</li><li>🧪 The splice should only remove elements from <code>arr</code> and not add any additional elements to <code>arr</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

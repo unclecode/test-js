@@ -1,0 +1,21 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Copy an Array with the Spread Operator</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>While <code>slice()</code> allows us to be selective about what elements of an array to copy, among several other useful tasks, ES6&apos;s new <dfn>spread operator</dfn> allows us to easily copy <em>all</em> of an array&apos;s elements, in order, with a simple and highly readable syntax. The spread syntax simply looks like this: <code>...</code></p>
+<p>In practice, we can use the spread operator to copy an array like so:</p><p></p><pre class=" language-js">let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+// thatArray equals [true, true, undefined, false, null]
+// thisArray remains unchanged, and is identical to thatArray
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>We have defined a function, <code>copyMachine</code> which takes <code>arr</code> (an array) and <code>num</code> (a number) as arguments. The function is supposed to return a new array made up of <code>num</code> copies of <code>arr</code>. We have done most of the work for you, but it doesn&apos;t work quite right yet. Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!).</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>copyMachine([true, false, true], 2)</code> should return <code>[[true, false, true], [true, false, true]]</code></li><li>🧪 <code>copyMachine([1, 2, 3], 5)</code> should return <code>[[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></li><li>🧪 <code>copyMachine([true, true, null], 1)</code> should return <code>[[true, true, null]]</code></li><li>🧪 <code>copyMachine([&quot;it works&quot;], 3)</code> should return <code>[[&quot;it works&quot;], [&quot;it works&quot;], [&quot;it works&quot;]]</code></li><li>🧪 The <code>copyMachine</code> function should utilize the <code>spread operator</code> with array <code>arr</code></li>
+            </ul>
+        </div>
+    </div>
+</div>
