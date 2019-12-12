@@ -1,0 +1,27 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Single Character with Multiple Possibilities</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You learned how to match literal patterns (<code>/literal/</code>) and wildcard character (<code>/./</code>). Those are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes.</p>
+<p>You can search for a literal pattern with some flexibility with <dfn>character classes</dfn>. Character classes allow you to define a group of characters you wish to match by placing them inside square (<code>[</code> and <code>]</code>) brackets.</p>
+<p>For example, you want to match <code>&quot;bag&quot;</code>, <code>&quot;big&quot;</code>, and <code>&quot;bug&quot;</code> but not <code>&quot;bog&quot;</code>. You can create the regex <code>/b[aiu]g/</code> to do this. The <code>[aiu]</code> is the character class that will only match the characters <code>&quot;a&quot;</code>, <code>&quot;i&quot;</code>, or <code>&quot;u&quot;</code>.</p><p></p><pre class=" language-js">let bigStr = &quot;big&quot;;
+let bagStr = &quot;bag&quot;;
+let bugStr = &quot;bug&quot;;
+let bogStr = &quot;bog&quot;;
+let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex); // Returns [&quot;big&quot;]
+bagStr.match(bgRegex); // Returns [&quot;bag&quot;]
+bugStr.match(bgRegex); // Returns [&quot;bug&quot;]
+bogStr.match(bgRegex); // Returns null
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use a character class with vowels (<code>a</code>, <code>e</code>, <code>i</code>, <code>o</code>, <code>u</code>) in your regex <code>vowelRegex</code> to find all the vowels in the string <code>quoteSample</code>.</p><p><strong>Note</strong><br>Be sure to match both upper- and lowercase vowels.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should find all 25 vowels.</li><li>🧪 Your regex <code>vowelRegex</code> should use a character class.</li><li>🧪 Your regex <code>vowelRegex</code> should use the global flag.</li><li>🧪 Your regex <code>vowelRegex</code> should use the case insensitive flag.</li><li>🧪 Your regex should not match any consonants.</li>
+            </ul>
+        </div>
+    </div>
+</div>
