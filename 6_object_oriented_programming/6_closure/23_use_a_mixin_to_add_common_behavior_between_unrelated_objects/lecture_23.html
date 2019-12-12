@@ -1,0 +1,41 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use a Mixin to Add Common Behavior Between Unrelated Objects</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>As you have seen, behavior is shared through inheritance. However, there are cases when inheritance is not the best solution. Inheritance does not work well for unrelated objects like <code>Bird</code> and <code>Airplane</code>. They can both fly, but a <code>Bird</code> is not a type of <code>Airplane</code> and vice versa.</p>
+<p>For unrelated objects, it&apos;s better to use <dfn>mixins</dfn>. A mixin allows other objects to use a collection of functions.</p><p></p><pre class=" language-js">let flyMixin = function(obj) {
+  obj.fly = function() {
+    console.log(&quot;Flying, wooosh!&quot;);
+  }
+};
+</pre><p></p>
+<p>The <code>flyMixin</code> takes any object and gives it the <code>fly</code> method.</p>
+<p></p><pre class=" language-js">let bird = {
+  name: &quot;Donald&quot;,
+  numLegs: 2
+};
+
+let plane = {
+  model: &quot;777&quot;,
+  numPassengers: 524
+};
+
+flyMixin(bird);
+flyMixin(plane);
+</pre><p></p>
+<p>Here <code>bird</code> and <code>plane</code> are passed into <code>flyMixin</code>, which then assigns the <code>fly</code> function to each object. Now <code>bird</code> and <code>plane</code> can both fly:</p>
+<p></p><pre class=" language-js">bird.fly(); // prints &quot;Flying, wooosh!&quot;
+plane.fly(); // prints &quot;Flying, wooosh!&quot;
+</pre><p></p>
+<p>Note how the mixin allows for the same <code>fly</code> method to be reused by unrelated objects <code>bird</code> and <code>plane</code>.</p>
+</section></div><hr><div><section id="instructions">
+<p>Create a mixin named <code>glideMixin</code> that defines a method named <code>glide</code>. Then use the <code>glideMixin</code> to give both <code>bird</code> and <code>boat</code> the ability to glide.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should declare a <code>glideMixin</code> variable that is a function.</li><li>🧪 Your code should use the <code>glideMixin</code> on the <code>bird</code> object to give it the <code>glide</code> method.</li><li>🧪 Your code should use the <code>glideMixin</code> on the <code>boat</code> object to give it the <code>glide</code> method.</li>
+            </ul>
+        </div>
+    </div>
+</div>
