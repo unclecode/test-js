@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Local Scope and Functions</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Variables which are declared within a function, as well as the function parameters have <dfn>local</dfn> scope. That means, they are only visible within that function.</p>
+<p>Here is a function <code>myTest</code> with a local variable called <code>loc</code>.</p><p></p><pre class=" language-js">function myTest() {
+  var loc = &quot;foo&quot;;
+  console.log(loc);
+}
+myTest(); // logs &quot;foo&quot;
+console.log(loc); // loc is not defined
+</pre><p></p>
+<p><code>loc</code> is not defined outside of the function.</p>
+</section></div><hr><div><section id="instructions">
+<p>Declare a local variable <code>myVar</code> inside <code>myLocalScope</code>. Run the tests and then follow the instructions commented out in the editor.</p><p><strong>Hint</strong><br>Refreshing the page may help if you get stuck.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The code should not contain a global <code>myVar</code> variable.</li><li>🧪 You should add a local <code>myVar</code> variable.</li>
+            </ul>
+        </div>
+    </div>
+</div>
