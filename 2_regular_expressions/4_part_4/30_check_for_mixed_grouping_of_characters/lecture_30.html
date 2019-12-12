@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Check For Mixed Grouping of Characters</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses <code>()</code>.</p>
+<p>If you want to find either <code>Penguin</code> or <code>Pumpkin</code> in a string, you can use the following Regular Expression: <code>/P(engu|umpk)in/g</code></p>
+<p>Then check whether the desired string groups are in the test string by using the <code>test()</code> method.</p><p></p><pre class=" language-js">let testStr = &quot;Pumpkin&quot;;
+let testRegex = /P(engu|umpk)in/g;
+testRegex.test(testStr);
+// Returns true
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Fix the regex so that it checks for the names of <code>Franklin Roosevelt</code> or <code>Eleanor Roosevelt</code> in a case sensitive manner and it should make concessions for middle names.</p>
+<p>Then fix the code so that the regex that you have created is checked against <code>myString</code> and either <code>true</code> or <code>false</code> is returned depending on whether the regex matches.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>myRegex</code> should return <code>true</code> for the string <code>Franklin D. Roosevelt</code></li><li>🧪 Your regex <code>myRegex</code> should return <code>true</code> for the string <code>Eleanor Roosevelt</code></li><li>🧪 Your regex <code>myRegex</code> should return <code>false</code> for the string <code>Franklin Rosevelt</code></li><li>🧪 You should use <code>.test()</code> to test the regex.</li><li>🧪 Your result should return <code>true</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

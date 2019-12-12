@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Reuse Patterns Using Capture Groups</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Some patterns you search for will occur multiple times in a string. It is wasteful to manually repeat that regex. There is a better way to specify when you have multiple repeat substrings in your string.</p>
+<p>You can search for repeat substrings using <dfn>capture groups</dfn>. Parentheses, <code>(</code> and <code>)</code>, are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses.</p>
+<p>To specify where that repeat string will appear, you use a backslash (<code>\</code>) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be <code>\1</code> to match the first group.</p>
+<p>The example below matches any word that occurs twice separated by a space:</p><p></p><pre class=" language-js">let repeatStr = &quot;regex regex&quot;;
+let repeatRegex = /(\w+)\s\1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns [&quot;regex regex&quot;, &quot;regex&quot;]
+</pre><p></p>
+<p>Using the <code>.match()</code> method on a string will return an array with the string it matches, along with its capture group.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use capture groups in <code>reRegex</code> to match numbers that are repeated only three times in a string, each separated by a space.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use the shorthand character class for digits.</li><li>🧪 Your regex should reuse a capture group twice.</li><li>🧪 Your regex should have two spaces separating the three numbers.</li><li>🧪 Your regex should match <code>&quot;42 42 42&quot;</code>.</li><li>🧪 Your regex should match <code>&quot;100 100 100&quot;</code>.</li><li>🧪 Your regex should not match <code>&quot;42 42 42 42&quot;</code>.</li><li>🧪 Your regex should not match <code>&quot;42 42&quot;</code>.</li><li>🧪 Your regex should not match <code>&quot;101 102 103&quot;</code>.</li><li>🧪 Your regex should not match <code>&quot;1 2 3&quot;</code>.</li><li>🧪 Your regex should match <code>&quot;10 10 10&quot;</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

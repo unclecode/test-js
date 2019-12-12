@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Specify Upper and Lower Number of Matches</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Recall that you use the plus sign <code>+</code> to look for one or more characters and the asterisk <code>*</code> to look for zero or more characters. These are convenient but sometimes you want to match a certain range of patterns.</p>
+<p>You can specify the lower and upper number of patterns with <dfn>quantity specifiers</dfn>. Quantity specifiers are used with curly brackets (<code>{</code> and <code>}</code>). You put two numbers between the curly brackets - for the lower and upper number of patterns.</p>
+<p>For example, to match only the letter <code>a</code> appearing between <code>3</code> and <code>5</code> times in the string <code>&quot;ah&quot;</code>, your regex would be <code>/a{3,5}h/</code>.</p><p></p><pre class=" language-js">let A4 = &quot;aaaah&quot;;
+let A2 = &quot;aah&quot;;
+let multipleA = /a{3,5}h/;
+multipleA.test(A4); // Returns true
+multipleA.test(A2); // Returns false
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Change the regex <code>ohRegex</code> to match the entire phrase <code>&quot;Oh no&quot;</code> only when it has <code>3</code> to <code>6</code> letter <code>h</code>&apos;s.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use curly brackets.</li><li>🧪 Your regex should not match <code>&quot;Ohh no&quot;</code></li><li>🧪 Your regex should match <code>&quot;Ohhh no&quot;</code></li><li>🧪 Your regex should match <code>&quot;Ohhhh no&quot;</code></li><li>🧪 Your regex should match <code>&quot;Ohhhhh no&quot;</code></li><li>🧪 Your regex should match <code>&quot;Ohhhhhh no&quot;</code></li><li>🧪 Your regex should not match <code>&quot;Ohhhhhhh no&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

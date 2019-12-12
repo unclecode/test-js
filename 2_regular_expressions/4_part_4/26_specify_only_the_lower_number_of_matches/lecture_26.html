@@ -1,0 +1,25 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Specify Only the Lower Number of Matches</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit.</p>
+<p>To only specify the lower number of patterns, keep the first number followed by a comma.</p>
+<p>For example, to match only the string <code>&quot;hah&quot;</code> with the letter <code>a</code> appearing at least <code>3</code> times, your regex would be <code>/ha{3,}h/</code>.</p><p></p><pre class=" language-js">let A4 = &quot;haaaah&quot;;
+let A2 = &quot;haah&quot;;
+let A100 = &quot;h&quot; + &quot;a&quot;.repeat(100) + &quot;h&quot;;
+let multipleA = /ha{3,}h/;
+multipleA.test(A4); // Returns true
+multipleA.test(A2); // Returns false
+multipleA.test(A100); // Returns true
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Change the regex <code>haRegex</code> to match the word <code>&quot;Hazzah&quot;</code> only when it has four or more letter <code>z</code>&apos;s.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use curly brackets.</li><li>🧪 Your regex should not match <code>&quot;Hazzah&quot;</code></li><li>🧪 Your regex should not match <code>&quot;Hazzzah&quot;</code></li><li>🧪 Your regex should match <code>&quot;Hazzzzah&quot;</code></li><li>🧪 Your regex should match <code>&quot;Hazzzzzah&quot;</code></li><li>🧪 Your regex should match <code>&quot;Hazzzzzzah&quot;</code></li><li>🧪 Your regex should match <code>&quot;Hazzah&quot;</code> with 30 <code>z</code>&apos;s in it.</li>
+            </ul>
+        </div>
+    </div>
+</div>
