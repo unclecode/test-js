@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Ending String Patterns</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the last challenge, you learned to use the caret character to search for patterns at the beginning of strings. There is also a way to search for patterns at the end of strings.</p>
+<p>You can search the end of strings using the dollar sign character <code>$</code> at the end of the regex.</p><p></p><pre class=" language-js">let theEnding = &quot;This is a never ending story&quot;;
+let storyRegex = /story$/;
+storyRegex.test(theEnding);
+// Returns true
+let noEnding = &quot;Sometimes a story will have to end&quot;;
+storyRegex.test(noEnding);
+// Returns false
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use the anchor character (<code>$</code>) to match the string <code>&quot;caboose&quot;</code> at the end of the string <code>caboose</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should search for <code>&quot;caboose&quot;</code> with the dollar sign <code>$</code> anchor in your regex.</li><li>🧪 Your regex should not use any flags.</li><li>🧪 You should match <code>&quot;caboose&quot;</code> at the end of the string <code>&quot;The last car on a train is the caboose&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match All Letters and Numbers</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Using character classes, you were able to search for all letters of the alphabet with <code>[a-z]</code>. This kind of character class is common enough that there is a shortcut for it, although it includes a few extra characters as well.</p>
+<p>The closest character class in JavaScript to match the alphabet is <code>\w</code>. This shortcut is equal to <code>[A-Za-z0-9_]</code>. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (<code>_</code>).</p><p></p><pre class=" language-js">let longHand = /[A-Za-z0-9_]+/;
+let shortHand = /\w+/;
+let numbers = &quot;42&quot;;
+let varNames = &quot;important_var&quot;;
+longHand.test(numbers); // Returns true
+shortHand.test(numbers); // Returns true
+longHand.test(varNames); // Returns true
+shortHand.test(varNames); // Returns true
+</pre><p></p>
+<p>These shortcut character classes are also known as <dfn>shorthand character classes</dfn>.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use the shorthand character class <code>\w</code> to count the number of alphanumeric characters in various quotes and strings.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use the global flag.</li><li>🧪 Your regex should use the shorthand character <code>\w</code> to match all characters which are alphanumeric.</li><li>🧪 Your regex should find 31 alphanumeric characters in <code>&quot;The five boxing wizards jump quickly.&quot;</code></li><li>🧪 Your regex should find 32 alphanumeric characters in <code>&quot;Pack my box with five dozen liquor jugs.&quot;</code></li><li>🧪 Your regex should find 30 alphanumeric characters in <code>&quot;How vexingly quick daft zebras jump!&quot;</code></li><li>🧪 Your regex should find 36 alphanumeric characters in <code>&quot;123 456 7890 ABC def GHI jkl MNO pqr STU vwx YZ.&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

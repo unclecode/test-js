@@ -1,0 +1,21 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Whitespace</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>The challenges so far have covered matching letters of the alphabet and numbers. You can also match the whitespace or spaces between letters.</p>
+<p>You can search for whitespace using <code>\s</code>, which is a lowercase <code>s</code>. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. You can think of it as similar to the character class <code>[ \r\t\f\n\v]</code>.</p><p></p><pre class=" language-js">let whiteSpace = &quot;Whitespace. Whitespace everywhere!&quot;
+let spaceRegex = /\s/g;
+whiteSpace.match(spaceRegex);
+// Returns [&quot; &quot;, &quot; &quot;]
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Change the regex <code>countWhiteSpace</code> to look for multiple whitespace characters in a string.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use the global flag.</li><li>🧪 Your regex should use the shorthand character <code>\s</code> to match all whitespace characters.</li><li>🧪 Your regex should find eight spaces in <code>&quot;Men are from Mars and women are from Venus.&quot;</code></li><li>🧪 Your regex should find three spaces in <code>&quot;Space: the final frontier.&quot;</code></li><li>🧪 Your regex should find no spaces in <code>&quot;MindYourPersonalSpace&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>
