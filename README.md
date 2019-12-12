@@ -1,0 +1,2 @@
+## 008_intermediate_algorithm_scripting
+# 000_introduction_to_the_intermediate_algorithm_scripting_challenges
