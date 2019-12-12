@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Sort an Array Alphabetically using the sort Method</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>The <code>sort</code> method sorts the elements of an array according to the callback function.</p>
+<p>For example:</p><p></p><pre class=" language-js">function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+ascendingOrder([1, 5, 2, 3, 4]);
+// Returns [1, 2, 3, 4, 5]
+
+function reverseAlpha(arr) {
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a &lt; b ? 1 : -1;
+  });
+}
+reverseAlpha([&apos;l&apos;, &apos;h&apos;, &apos;z&apos;, &apos;b&apos;, &apos;s&apos;]);
+// Returns [&apos;z&apos;, &apos;s&apos;, &apos;l&apos;, &apos;h&apos;, &apos;b&apos;]
+</pre><p></p>
+<p>JavaScript&apos;s default sorting method is by string Unicode point value, which may return unexpected results. Therefore, it is encouraged to provide a callback function to specify how to sort the array items. When such a callback function, normally called <code>compareFunction</code>, is supplied, the array elements are sorted according to the return value of the <code>compareFunction</code>:
+If <code>compareFunction(a,b)</code> returns a value less than 0 for two elements <code>a</code> and <code>b</code>, then <code>a</code> will come before <code>b</code>.
+If <code>compareFunction(a,b)</code> returns a value greater than 0 for two elements <code>a</code> and <code>b</code>, then <code>b</code> will come before <code>a</code>.
+If <code>compareFunction(a,b)</code> returns a value equal to 0 for two elements <code>a</code> and <code>b</code>, then <code>a</code> and <code>b</code> will remain unchanged.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use the <code>sort</code> method in the <code>alphabeticalOrder</code> function to sort the elements of <code>arr</code> in alphabetical order.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should use the <code>sort</code> method.</li><li>🧪 <code>alphabeticalOrder([&quot;a&quot;, &quot;d&quot;, &quot;c&quot;, &quot;a&quot;, &quot;z&quot;, &quot;g&quot;])</code> should return <code>[&quot;a&quot;, &quot;a&quot;, &quot;c&quot;, &quot;d&quot;, &quot;g&quot;, &quot;z&quot;]</code>.</li><li>🧪 <code>alphabeticalOrder([&quot;x&quot;, &quot;h&quot;, &quot;a&quot;, &quot;m&quot;, &quot;n&quot;, &quot;m&quot;])</code> should return <code>[&quot;a&quot;, &quot;h&quot;, &quot;m&quot;, &quot;m&quot;, &quot;n&quot;, &quot;x&quot;]</code>.</li><li>🧪 <code>alphabeticalOrder([&quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;x&quot;, &quot;t&quot;])</code> should return <code>[&quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;t&quot;, &quot;x&quot;]</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>
