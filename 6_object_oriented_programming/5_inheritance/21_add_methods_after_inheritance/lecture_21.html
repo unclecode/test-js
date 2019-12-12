@@ -1,0 +1,34 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Add Methods After Inheritance</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>A constructor function that inherits its <code>prototype</code> object from a supertype constructor function can still have its own methods in addition to inherited methods.</p>
+<p>For example, <code>Bird</code> is a constructor that inherits its <code>prototype</code> from <code>Animal</code>:</p><p></p><pre class=" language-js">function Animal() { }
+Animal.prototype.eat = function() {
+  console.log(&quot;nom nom nom&quot;);
+};
+function Bird() { }
+Bird.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+</pre><p></p>
+<p>In addition to what is inherited from <code>Animal</code>, you want to add behavior that is unique to <code>Bird</code> objects. Here, <code>Bird</code> will get a <code>fly()</code> function. Functions are added to <code>Bird&apos;s</code> <code>prototype</code> the same way as any constructor function:</p>
+<p></p><pre class=" language-js">Bird.prototype.fly = function() {
+  console.log(&quot;I&apos;m flying!&quot;);
+};
+</pre><p></p>
+<p>Now instances of <code>Bird</code> will have both <code>eat()</code> and <code>fly()</code> methods:</p>
+<p></p><pre class=" language-js">let duck = new Bird();
+duck.eat(); // prints &quot;nom nom nom&quot;
+duck.fly(); // prints &quot;I&apos;m flying!&quot;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Add all necessary code so the <code>Dog</code> object inherits from <code>Animal</code> and the <code>Dog&apos;s</code> <code>prototype</code> constructor is set to Dog. Then add a <code>bark()</code> method to the <code>Dog</code> object so that <code>beagle</code> can both <code>eat()</code> and <code>bark()</code>. The <code>bark()</code> method should print &quot;Woof!&quot; to the console.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>Animal</code> should not respond to the <code>bark()</code> method.</li><li>🧪 <code>Dog</code> should inherit the <code>eat()</code> method from <code>Animal</code>.</li><li>🧪 <code>Dog</code> should have the <code>bark()</code> method as an <code>own</code> property.</li><li>🧪 <code>beagle</code> should be an <code>instanceof</code> <code>Animal</code>.</li><li>🧪 The constructor for <code>beagle</code> should be set to <code>Dog</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>
