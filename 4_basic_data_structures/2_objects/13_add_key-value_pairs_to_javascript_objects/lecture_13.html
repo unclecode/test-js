@@ -1,0 +1,31 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Add Key-Value Pairs to JavaScript Objects</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>At their most basic, objects are just collections of <dfn>key-value pairs</dfn>, or in other words, pieces of data mapped to unique identifiers that we call <dfn>properties</dfn> or <dfn>keys</dfn>. Let&apos;s take a look at a very simple example:</p><p></p><pre class=" language-js">let FCC_User = {
+  username: &apos;awesome_coder&apos;,
+  followers: 572,
+  points: 1741,
+  completedProjects: 15
+};
+</pre><p></p>
+<p>The above code defines an object called <code>FCC_User</code> that has four <dfn>properties</dfn>, each of which map to a specific value. If we wanted to know the number of <code>followers</code> <code>FCC_User</code> has, we can access that property by writing:</p>
+<p></p><pre class=" language-js">let userData = FCC_User.followers;
+// userData equals 572
+</pre><p></p>
+<p>This is called <dfn>dot notation</dfn>. Alternatively, we can also access the property with brackets, like so:</p>
+<p></p><pre class=" language-js">let userData = FCC_User[&apos;followers&apos;];
+// userData equals 572
+</pre><p></p>
+<p>Notice that with <dfn>bracket notation</dfn>, we enclosed <code>followers</code> in quotes. This is because the brackets actually allow us to pass a variable in to be evaluated as a property name (hint: keep this in mind for later!). Had we passed <code>followers</code> in without the quotes, the JavaScript engine would have attempted to evaluate it as a variable, and a <code>ReferenceError: followers is not defined</code> would have been thrown.</p>
+</section></div><hr><div><section id="instructions">
+<p>Using the same syntax, we can also <em><strong>add new</strong></em> key-value pairs to objects. We&apos;ve created a <code>foods</code> object with three entries. Add three more entries: <code>bananas</code> with a value of <code>13</code>, <code>grapes</code> with a value of <code>35</code>, and <code>strawberries</code> with a value of <code>27</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>foods</code> should be an object.</li><li>🧪 The <code>foods</code> object should have a key <code>&quot;bananas&quot;</code> with a value of <code>13</code>.</li><li>🧪 The <code>foods</code> object should have a key <code>&quot;grapes&quot;</code> with a value of <code>35</code>.</li><li>🧪 The <code>foods</code> object should have a key <code>&quot;strawberries&quot;</code> with a value of <code>27</code>.</li><li>🧪 The key-value pairs should be set using dot or bracket notation.</li>
+            </ul>
+        </div>
+    </div>
+</div>
