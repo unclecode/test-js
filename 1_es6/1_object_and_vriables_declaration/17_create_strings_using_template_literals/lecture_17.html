@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Create Strings using Template Literals</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>A new feature of ES6 is the <dfn>template literal</dfn>. This is a special type of string that makes creating complex strings easier.</p>
+<p>Template literals allow you to create multi-line strings and to use string interpolation features to create strings.</p>
+<p>Consider the code below:</p><p></p><pre class=" language-js">const person = {
+  name: &quot;Zodiac Hasbro&quot;,
+  age: 56
+};
+
+// Template literal with multi-line and string interpolation
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting); // prints
+// Hello, my name is Zodiac Hasbro!
+// I am 56 years old.
+</pre><p></p>
+<p>A lot of things happened there.
+Firstly, the example uses backticks (<code>`</code>), not quotes (<code>&apos;</code> or <code>&quot;</code>), to wrap the string.
+Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting <code>\n</code> within strings.
+The <code>${variable}</code> syntax used above is a placeholder. Basically, you won&apos;t have to use concatenation with the <code>+</code> operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with <code>${</code> and <code>}</code>. Similarly, you can include other expressions in your string literal, for example <code>${a + b}</code>.
+This new way of creating strings gives you more flexibility to create robust strings.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use template literal syntax with backticks to display each entry of the <code>result</code> object&apos;s <code>failure</code> array. Each entry should be wrapped inside an <code>li</code> element with the class attribute <code>text-warning</code>, and listed within the <code>resultDisplayArray</code>.</p>
+<p>Use an iterator method (any kind of loop) to get the desired output.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>resultDisplayArray</code> should be an array containing <code>result failure</code> messages.</li><li>🧪 <code>resultDisplayArray</code> should be equal to the specified output.</li><li>🧪 Template strings and expression interpolation should be used.</li><li>🧪 An iterator should be used.</li>
+            </ul>
+        </div>
+    </div>
+</div>

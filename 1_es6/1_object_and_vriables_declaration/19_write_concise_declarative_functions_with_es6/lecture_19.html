@@ -1,0 +1,30 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Write Concise Declarative Functions with ES6</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>When defining functions within objects in ES5, we have to use the keyword <code>function</code> as follows:</p><p></p><pre class=" language-js">const person = {
+  name: &quot;Taylor&quot;,
+  sayHello: function() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+</pre><p></p>
+<p>With ES6, You can remove the <code>function</code> keyword and colon altogether when defining functions in objects. Here&apos;s an example of this syntax:</p>
+<p></p><pre class=" language-js">const person = {
+  name: &quot;Taylor&quot;,
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Refactor the function <code>setGear</code> inside the object <code>bicycle</code> to use the shorthand syntax described above.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Traditional function expression should not be used.</li><li>🧪 <code>setGear</code> should be a declarative function.</li><li>🧪 <code>bicycle.setGear(48)</code> should change the <code>gear</code> value to 48.</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Explore Differences Between the var and let Keywords</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>One of the biggest problems with declaring variables with the <code>var</code> keyword is that you can overwrite variable declarations without an error.</p><p></p><pre class=" language-js">var camper = &apos;James&apos;;
+var camper = &apos;David&apos;;
+console.log(camper);
+// logs &apos;David&apos;
+</pre><p></p>
+<p>As you can see in the code above, the <code>camper</code> variable is originally declared as <code>James</code> and then overridden to be <code>David</code>.
+In a small application, you might not run into this type of problem, but when your code becomes larger, you might accidentally overwrite a variable that you did not intend to overwrite.
+Because this behavior does not throw an error, searching and fixing bugs becomes more difficult.<br>
+A new keyword called <code>let</code> was introduced in ES6 to solve this potential issue with the <code>var</code> keyword.
+If you were to replace <code>var</code> with <code>let</code> in the variable declarations of the code above, the result would be an error.</p>
+<p></p><pre class=" language-js">let camper = &apos;James&apos;;
+let camper = &apos;David&apos;; // throws an error
+</pre><p></p>
+<p>This error can be seen in the console of your browser.
+So unlike <code>var</code>, when using <code>let</code>, a variable with the same name can only be declared once.
+Note the <code>&quot;use strict&quot;</code>. This enables Strict Mode, which catches common coding mistakes and &quot;unsafe&quot; actions. For instance:</p>
+<p></p><pre class=" language-js">&quot;use strict&quot;;
+x = 3.14; // throws an error because x is not declared
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Update the code so it only uses the <code>let</code> keyword.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>var</code> should not exist in the code.</li><li>🧪 <code>catName</code> should be <code>Oliver</code>.</li><li>🧪 <code>quote</code> should be <code>&quot;Oliver says Meow!&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>
