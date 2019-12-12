@@ -1,0 +1,40 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Multiple Conditional (Ternary) Operators</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the previous challenge, you used a single conditional operator. You can also chain them together to check for multiple conditions.</p>
+<p>The following function uses if, else if, and else statements to check multiple conditions:</p><p></p><pre class=" language-js">function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return &quot;a and b are equal&quot;;
+  }
+  else if (a &gt; b) {
+    return &quot;a is greater&quot;;
+  }
+  else {
+    return &quot;b is greater&quot;;
+  }
+}
+</pre><p></p>
+<p>The above function can be re-written using multiple conditional operators:</p>
+<p></p><pre class=" language-js">function findGreaterOrEqual(a, b) {
+  return (a === b) ? &quot;a and b are equal&quot; 
+    : (a &gt; b) ? &quot;a is greater&quot; 
+    : &quot;b is greater&quot;;
+}
+</pre><p></p>
+<p>However, this should be used with care as using multiple conditional operators without proper indentation may make your code hard to read. For example:</p>
+<p></p><pre class=" language-js">function findGreaterOrEqual(a, b) {
+  return (a === b) ? &quot;a and b are equal&quot; : (a &gt; b) ? &quot;a is greater&quot; : &quot;b is greater&quot;;
+}
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use multiple conditional operators in the <code>checkSign</code> function to check if a number is positive, negative or zero. The function should return &quot;positive&quot;, &quot;negative&quot; or &quot;zero&quot;.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>checkSign</code> should use multiple conditional operators</li><li>🧪 <code>checkSign(10)</code> should return &quot;positive&quot;. Note that capitalization matters</li><li>🧪 <code>checkSign(-12)</code> should return &quot;negative&quot;. Note that capitalization matters</li><li>🧪 <code>checkSign(0)</code> should return &quot;zero&quot;. Note that capitalization matters</li>
+            </ul>
+        </div>
+    </div>
+</div>
