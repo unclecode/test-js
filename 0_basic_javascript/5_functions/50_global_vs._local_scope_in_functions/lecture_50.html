@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Global vs. Local Scope in Functions</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>It is possible to have both <dfn>local</dfn> and <dfn>global</dfn> variables with the same name. When you do this, the <code>local</code> variable takes precedence over the <code>global</code> variable.</p>
+<p>In this example:</p><p></p><pre class=" language-js">var someVar = &quot;Hat&quot;;
+function myFun() {
+  var someVar = &quot;Head&quot;;
+  return someVar;
+}
+</pre><p></p>
+<p>The function <code>myFun</code> will return <code>&quot;Head&quot;</code> because the <code>local</code> version of the variable is present.</p>
+</section></div><hr><div><section id="instructions">
+<p>Add a local variable to <code>myOutfit</code> function to override the value of <code>outerWear</code> with <code>&quot;sweater&quot;</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should not change the value of the global <code>outerWear</code>.</li><li>🧪 <code>myOutfit</code> should return <code>&quot;sweater&quot;</code>.</li><li>🧪 You should not change the return statement.</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use the filter Method to Extract Data from an Array</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Another useful array function is <code>Array.prototype.filter()</code>, or simply <code>filter()</code>. </p><p><code>filter</code> calls a function on each element of an array and returns a new array containing only the elements for which that function returns <code>true</code>.  In other words, it filters the array, based on the function passed to it.  Like <code>map</code>, it does this without needing to modify the original array.</p>
+<p>The callback function accepts three arguments.  The first argument is the current element being processed.  The second is the index of that element and the third is the array upon which the <code>filter</code> method was called.</p>
+<p>See below for an example using the <code>filter</code> method on the <code>users</code> array to return a new array containing only the users under the age of 30. For simplicity, the example only uses the first argument of the callback.</p><p></p><pre class="  language-js">const users = [
+  { name: &apos;John&apos;, age: 34 },
+  { name: &apos;Amy&apos;, age: 20 },
+  { name: &apos;camperCat&apos;, age: 10 }
+];
+
+const usersUnder30 = users.filter(user =&gt; user.age &lt; 30);
+console.log(usersUnder30); // [ { name: &apos;Amy&apos;, age: 20 }, { name: &apos;camperCat&apos;, age: 10 } ]
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>The variable <code>watchList</code> holds an array of objects with information on several movies. Use a combination of <code>filter</code> and <code>map</code> on <code>watchList</code> to assign a new array of objects with only <code>title</code> and <code>rating</code> keys.  The new array should only include objects where <code>imdbRating</code> is greater than or equal to 8.0. Note that the rating values are saved as strings in the object and you may need to convert them into numbers to perform mathematical operations on them.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The <code>watchList</code> variable should not change.</li><li>🧪 Your code should use the <code>filter</code> method.</li><li>🧪 Your code should not use a <code>for</code> loop.</li><li>🧪 <code>filteredList</code> should equal <code>[{&quot;title&quot;: &quot;Inception&quot;,&quot;rating&quot;: &quot;8.8&quot;},{&quot;title&quot;: &quot;Interstellar&quot;,&quot;rating&quot;: &quot;8.6&quot;},{&quot;title&quot;: &quot;The Dark Knight&quot;,&quot;rating&quot;: &quot;9.0&quot;},{&quot;title&quot;: &quot;Batman Begins&quot;,&quot;rating&quot;: &quot;8.3&quot;}]</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

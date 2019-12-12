@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Generate Random Whole Numbers with JavaScript</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>It&apos;s great that we can generate random decimal numbers, but it&apos;s even more useful if we use it to generate random whole numbers.</p><p></p><ol><li>Use <code>Math.random()</code> to generate a random decimal.</li><li>Multiply that random decimal by <code>20</code>.</li><li>Use another function, <code>Math.floor()</code> to round the number down to its nearest whole number.</li></ol><p></p>
+<p>Remember that <code>Math.random()</code> can never quite return a <code>1</code> and, because we&apos;re rounding down, it&apos;s impossible to actually get <code>20</code>. This technique will give us a whole number between <code>0</code> and <code>19</code>.</p>
+<p>Putting everything together, this is what our code looks like:</p><p><code>Math.floor(Math.random() * 20);</code></p>
+<p>We are calling <code>Math.random()</code>, multiplying the result by 20, then passing the value to <code>Math.floor()</code> function to round the value down to the nearest whole number.</p></section></div><hr><div><section id="instructions">
+<p>Use this technique to generate and return a random whole number between <code>0</code> and <code>9</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The result of <code>randomWholeNum</code> should be a whole number.</li><li>🧪 You should be using <code>Math.random</code> to generate a random number.</li><li>🧪 You should have multiplied the result of <code>Math.random</code> by 10 to make it a number that is between zero and nine.</li><li>🧪 You should use <code>Math.floor</code> to remove the decimal part of the number.</li>
+            </ul>
+        </div>
+    </div>
+</div>

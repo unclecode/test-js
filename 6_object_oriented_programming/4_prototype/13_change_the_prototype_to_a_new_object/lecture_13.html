@@ -1,0 +1,37 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Change the Prototype to a New Object</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Up until now you have been adding properties to the <code>prototype</code> individually:</p><p></p><pre class="  language-js">Bird.prototype.numLegs = 2;
+</pre><p></p>
+<p>This becomes tedious after more than a few properties.</p>
+<p></p><pre class="  language-js">Bird.prototype.eat = function() {
+  console.log(&quot;nom nom nom&quot;);
+}
+
+Bird.prototype.describe = function() {
+  console.log(&quot;My name is &quot; + this.name);
+}
+</pre><p></p>
+<p>A more efficient way is to set the <code>prototype</code> to a new object that already contains the properties. This way, the properties are added all at once:</p>
+<p></p><pre class="  language-js">Bird.prototype = {
+  numLegs: 2, 
+  eat: function() {
+    console.log(&quot;nom nom nom&quot;);
+  },
+  describe: function() {
+    console.log(&quot;My name is &quot; + this.name);
+  }
+};
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Add the property <code>numLegs</code> and the two methods <code>eat()</code> and <code>describe()</code> to the <code>prototype</code> of <code>Dog</code> by setting the <code>prototype</code> to a new object.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>Dog.prototype</code> should be set to a new object.</li><li>🧪 <code>Dog.prototype</code> should have the property <code>numLegs</code>.</li><li>🧪 <code>Dog.prototype</code> should have the method <code>eat()</code>.</li><li>🧪 <code>Dog.prototype</code> should have the method <code>describe()</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

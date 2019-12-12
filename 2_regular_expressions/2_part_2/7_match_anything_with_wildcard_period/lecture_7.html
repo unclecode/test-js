@@ -1,0 +1,22 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Anything with Wildcard Period</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Sometimes you won&apos;t (or don&apos;t need to) know the exact characters in your patterns. Thinking of all words that match, say, a misspelling would take a long time. Luckily, you can save time using the wildcard character: <code>.</code></p>
+<p>The wildcard character <code>.</code> will match any one character. The wildcard is also called <code>dot</code> and <code>period</code>. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match <code>&quot;hug&quot;</code>, <code>&quot;huh&quot;</code>, <code>&quot;hut&quot;</code>, and <code>&quot;hum&quot;</code>, you can use the regex <code>/hu./</code> to match all four words.</p><p></p><pre class=" language-js">let humStr = &quot;I&apos;ll hum a song&quot;;
+let hugStr = &quot;Bear hug&quot;;
+let huRegex = /hu./;
+huRegex.test(humStr); // Returns true
+huRegex.test(hugStr); // Returns true
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Complete the regex <code>unRegex</code> so that it matches the strings <code>&quot;run&quot;</code>, <code>&quot;sun&quot;</code>, <code>&quot;fun&quot;</code>, <code>&quot;pun&quot;</code>, <code>&quot;nun&quot;</code>, and <code>&quot;bun&quot;</code>. Your regex should use the wildcard character.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should use the <code>.test()</code> method.</li><li>🧪 You should use the wildcard character in your regex <code>unRegex</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;run&quot;</code> in <code>&quot;Let us go on a run.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;sun&quot;</code> in <code>&quot;The sun is out today.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;fun&quot;</code> in <code>&quot;Coding is a lot of fun.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;pun&quot;</code> in <code>&quot;Seven days without a pun makes one weak.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;nun&quot;</code> in <code>&quot;One takes a vow to be a nun.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should match <code>&quot;bun&quot;</code> in <code>&quot;She got fired from the hot dog stand for putting her hair in a bun.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should not match <code>&quot;There is a bug in my code.&quot;</code></li><li>🧪 Your regex <code>unRegex</code> should not match <code>&quot;Catch me if you can.&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

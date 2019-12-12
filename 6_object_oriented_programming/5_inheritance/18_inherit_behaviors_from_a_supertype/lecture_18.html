@@ -1,0 +1,32 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Inherit Behaviors from a Supertype</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the previous challenge, you created a <code>supertype</code> called <code>Animal</code> that defined behaviors shared by all animals:</p><p></p><pre class=" language-js">function Animal() { }
+Animal.prototype.eat = function() {
+  console.log(&quot;nom nom nom&quot;);
+};
+</pre><p></p>
+<p>This and the next challenge will cover how to reuse <code>Animal&apos;s</code> methods inside <code>Bird</code> and <code>Dog</code> without defining them again. It uses a technique called inheritance.
+This challenge covers the first step: make an instance of the <code>supertype</code> (or parent).
+You already know one way to create an instance of <code>Animal</code> using the <code>new</code> operator:</p>
+<p></p><pre class=" language-js">let animal = new Animal();
+</pre><p></p>
+<p>There are some disadvantages when using this syntax for inheritance, which are too complex for the scope of this challenge. Instead, here&apos;s an alternative approach without those disadvantages:</p>
+<p></p><pre class=" language-js">let animal = Object.create(Animal.prototype);
+</pre><p></p>
+<p><code>Object.create(obj)</code> creates a new object, and sets <code>obj</code> as the new object&apos;s <code>prototype</code>. Recall that the <code>prototype</code> is like the &quot;recipe&quot; for creating an object. By setting the <code>prototype</code> of <code>animal</code> to be <code>Animal&apos;s</code> <code>prototype</code>, you are effectively giving the <code>animal</code> instance the same &quot;recipe&quot; as any other instance of <code>Animal</code>.</p>
+<p></p><pre class=" language-js">animal.eat(); // prints &quot;nom nom nom&quot;
+animal instanceof Animal; // =&gt; true
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use <code>Object.create</code> to make two instances of <code>Animal</code> named <code>duck</code> and <code>beagle</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The <code>duck</code> variable should be defined.</li><li>🧪 The <code>beagle</code> variable should be defined.</li><li>🧪 The <code>duck</code> variable should be initialised with <code>Object.create</code>.</li><li>🧪 The <code>beagle</code> variable should be initialised with <code>Object.create</code>.</li><li>🧪 <code>duck</code> should have a <code>prototype</code> of <code>Animal</code>.</li><li>🧪 <code>beagle</code> should have a <code>prototype</code> of <code>Animal</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

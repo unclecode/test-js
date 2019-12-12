@@ -1,0 +1,22 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array.</p>
+<p>The result is similar to <code>Array.prototype.slice()</code>, as shown below:</p><p></p><pre class=" language-js">const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(a, b); // 1, 2
+console.log(arr); // [3, 4, 5, 7]
+</pre><p></p>
+<p>Variables <code>a</code> and <code>b</code> take the first and second values from the array. After that, because of rest parameter&apos;s presence, <code>arr</code> gets rest of the values in the form of an array.
+The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out last element of the original array.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use destructuring assignment with the rest parameter to perform an effective <code>Array.prototype.slice()</code> so that <code>arr</code> is a sub-array of the original array <code>source</code> with the first two elements omitted.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>arr</code> should be <code>[3,4,5,6,7,8,9,10]</code></li><li>🧪 <code>Array.slice()</code> should not be used.</li><li>🧪 Destructuring on <code>list</code> should be used.</li>
+            </ul>
+        </div>
+    </div>
+</div>

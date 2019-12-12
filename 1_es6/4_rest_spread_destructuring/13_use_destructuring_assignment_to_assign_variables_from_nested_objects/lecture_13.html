@@ -1,0 +1,29 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Destructuring Assignment to Assign Variables from Nested Objects</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You can use the same principles from the previous two lessons to destructure values from nested objects.</p><p>Using an object similar to previous examples:</p>
+<p></p><pre class=" language-js">const user = {
+  johnDoe: { 
+    age: 34,
+    email: &apos;johnDoe@freeCodeCamp.com&apos;
+  }
+};
+</pre><p></p>
+<p>Here&apos;s how to extract the values of object properties and assign them to variables with the same name:</p>
+<p></p><pre class=" language-js">const { johnDoe: { age, email }} = user;
+</pre><p></p>
+<p>And here&apos;s how you can assign an object properties&apos; values to variables with different names:</p>
+<p></p><pre class=" language-js">const { johnDoe: { age: userAge, email: userEmail }} = user;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables <code>lowToday</code> and <code>highToday</code> the values of <code>today.low</code> and <code>today.high</code> from the <code>LOCAL_FORECAST</code> object.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should remove the ES5 assignment syntax.</li><li>🧪 You should use destructuring to create the <code>lowToday</code> variable.</li><li>🧪 You should use destructuring to create the <code>highToday</code> variable.</li>
+            </ul>
+        </div>
+    </div>
+</div>

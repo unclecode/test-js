@@ -1,0 +1,22 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Check For The Presence of an Element With indexOf()</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Since arrays can be changed, or <em>mutated</em>, at any time, there&apos;s no guarantee about where a particular piece of data will be on a given array, or if that element even still exists. Luckily, JavaScript provides us with another built-in method, <code>indexOf()</code>, that allows us to quickly and easily check for the presence of an element on an array. <code>indexOf()</code> takes an element as a parameter, and when called, it returns the position, or index, of that element, or <code>-1</code> if the element does not exist on the array.</p>
+<p>For example:</p><p></p><pre class=" language-js">let fruits = [&apos;apples&apos;, &apos;pears&apos;, &apos;oranges&apos;, &apos;peaches&apos;, &apos;pears&apos;];
+
+fruits.indexOf(&apos;dates&apos;); // returns -1
+fruits.indexOf(&apos;oranges&apos;); // returns 2
+fruits.indexOf(&apos;pears&apos;); // returns 1, the first index at which the element exists
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p><code>indexOf()</code> can be incredibly useful for quickly checking for the presence of an element on an array. We have defined a function, <code>quickCheck</code>, that takes an array and an element as arguments. Modify the function using <code>indexOf()</code> so that it returns <code>true</code> if the passed element exists on the array, and <code>false</code> if it does not.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>quickCheck([&quot;squash&quot;, &quot;onions&quot;, &quot;shallots&quot;], &quot;mushrooms&quot;)</code> should return <code>false</code></li><li>🧪 <code>quickCheck([&quot;onions&quot;, &quot;squash&quot;, &quot;shallots&quot;], &quot;onions&quot;)</code> should return <code>true</code></li><li>🧪 <code>quickCheck([3, 5, 9, 125, 45, 2], 125)</code> should return <code>true</code></li><li>🧪 <code>quickCheck([true, false, false], undefined)</code> should return <code>false</code></li><li>🧪 The <code>quickCheck</code> function should utilize the <code>indexOf()</code> method</li>
+            </ul>
+        </div>
+    </div>
+</div>

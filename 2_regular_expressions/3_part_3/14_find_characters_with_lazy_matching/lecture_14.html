@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Find Characters with Lazy Matching</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In regular expressions, a <dfn>greedy</dfn> match finds the longest possible part of a string that fits the regex pattern and returns it as a match. The alternative is called a <dfn>lazy</dfn> match, which finds the smallest possible part of the string that satisfies the regex pattern.</p>
+<p>You can apply the regex <code>/t[a-z]*i/</code> to the string <code>&quot;titanic&quot;</code>. This regex is basically a pattern that starts with <code>t</code>, ends with <code>i</code>, and has some letters in between.</p>
+<p>Regular expressions are by default greedy, so the match would return <code>[&quot;titani&quot;]</code>. It finds the largest sub-string possible to fit the pattern.</p>
+<p>However, you can use the <code>?</code> character to change it to lazy matching. <code>&quot;titanic&quot;</code> matched against the adjusted regex of <code>/t[a-z]*?i/</code> returns <code>[&quot;ti&quot;]</code>.</p><p><strong>Note</strong><br>Parsing HTML with regular expressions should be avoided, but pattern matching an HTML string with regular expressions is completely fine.</p></section></div><hr><div><section id="instructions">
+<p>Fix the regex <code>/&lt;.*&gt;/</code> to return the HTML tag <code>&lt;h1&gt;</code> and not the text <code>&quot;&lt;h1&gt;Winter is coming&lt;/h1&gt;&quot;</code>. Remember the wildcard <code>.</code> in a regular expression matches any character.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The <code>result</code> variable should be an array with <code>&lt;h1&gt;</code> in it</li>
+            </ul>
+        </div>
+    </div>
+</div>

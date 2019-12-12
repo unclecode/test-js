@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Prototype Properties to Reduce Duplicate Code</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Since <code>numLegs</code> will probably have the same value for all instances of <code>Bird</code>, you essentially have a duplicated variable <code>numLegs</code> inside each <code>Bird</code> instance.</p>
+<p>This may not be an issue when there are only two instances, but imagine if there are millions of instances. That would be a lot of duplicated variables.</p>
+<p>A better way is to use <code>Bird&#x2019;s</code> <code>prototype</code>. Properties in the <code>prototype</code> are shared among ALL instances of <code>Bird</code>. Here&apos;s how to add <code>numLegs</code> to the <code>Bird prototype</code>:</p><p></p><pre class=" language-js">Bird.prototype.numLegs = 2;
+</pre><p></p>
+<p>Now all instances of <code>Bird</code> have the <code>numLegs</code> property.</p>
+<p></p><pre class=" language-js">console.log(duck.numLegs);  // prints 2
+console.log(canary.numLegs);  // prints 2
+</pre><p></p>
+<p>Since all instances automatically have the properties on the <code>prototype</code>, think of a <code>prototype</code> as a &quot;recipe&quot; for creating objects.
+Note that the <code>prototype</code> for <code>duck</code> and <code>canary</code> is part of the <code>Bird</code> constructor as <code>Bird.prototype</code>. Nearly every object in JavaScript has a <code>prototype</code> property which is part of the constructor function that created it.</p>
+</section></div><hr><div><section id="instructions">
+<p>Add a <code>numLegs</code> property to the <code>prototype</code> of <code>Dog</code></p>
+</section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>beagle</code> should have a <code>numLegs</code> property.</li><li>🧪 <code>beagle.numLegs</code> should be a number.</li><li>🧪 <code>numLegs</code> should be a <code>prototype</code> property not an <code>own</code> property.</li>
+            </ul>
+        </div>
+    </div>
+</div>

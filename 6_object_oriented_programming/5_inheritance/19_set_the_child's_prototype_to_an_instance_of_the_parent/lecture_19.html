@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Set the Child's Prototype to an Instance of the Parent</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the previous challenge you saw the first step for inheriting behavior from the supertype (or parent) <code>Animal</code>: making a new instance of <code>Animal</code>.</p>
+<p>This challenge covers the next step: set the <code>prototype</code> of the subtype (or child)&#x2014;in this case, <code>Bird</code>&#x2014;to be an instance of <code>Animal</code>.</p><p></p><pre class="  language-js">Bird.prototype = Object.create(Animal.prototype);
+</pre><p></p>
+<p>Remember that the <code>prototype</code> is like the &quot;recipe&quot; for creating an object. In a way, the recipe for <code>Bird</code> now includes all the key &quot;ingredients&quot; from <code>Animal</code>.</p>
+<p></p><pre class="  language-js">let duck = new Bird(&quot;Donald&quot;);
+duck.eat(); // prints &quot;nom nom nom&quot;
+</pre><p></p>
+<p><code>duck</code> inherits all of <code>Animal</code>&apos;s properties, including the <code>eat</code> method.</p>
+</section></div><hr><div><section id="instructions">
+<p>Modify the code so that instances of <code>Dog</code> inherit from <code>Animal</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>Dog.prototype</code> should be an instance of <code>Animal</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

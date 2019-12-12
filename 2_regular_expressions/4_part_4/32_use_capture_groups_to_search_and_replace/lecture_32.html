@@ -1,0 +1,25 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Capture Groups to Search and Replace</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match.</p>
+<p>You can search and replace text in a string using <code>.replace()</code> on a string. The inputs for <code>.replace()</code> is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.</p><p></p><pre class=" language-js">let wrongText = &quot;The sky is silver.&quot;;
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, &quot;blue&quot;);
+// Returns &quot;The sky is blue.&quot;
+</pre><p></p>
+<p>You can also access capture groups in the replacement string with dollar signs (<code>$</code>).</p>
+<p></p><pre class=" language-js">&quot;Code Camp&quot;.replace(/(\w+)\s(\w+)/, &apos;$2 $1&apos;);
+// Returns &quot;Camp Code&quot;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Write a regex so that it will search for the string <code>&quot;good&quot;</code>. Then update the <code>replaceText</code> variable to replace <code>&quot;good&quot;</code> with <code>&quot;okey-dokey&quot;</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should use <code>.replace()</code> to search and replace.</li><li>🧪 Your regex should change <code>&quot;This sandwich is good.&quot;</code> to <code>&quot;This sandwich is okey-dokey.&quot;</code></li><li>🧪 You should not change the last line.</li>
+            </ul>
+        </div>
+    </div>
+</div>

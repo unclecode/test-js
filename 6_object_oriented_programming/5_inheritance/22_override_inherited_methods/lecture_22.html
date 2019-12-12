@@ -1,0 +1,45 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Override Inherited Methods</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In previous lessons, you learned that an object can inherit its behavior (methods) from another object by referencing its <code>prototype</code> object:</p>
+<p></p><pre class=" language-js">ChildObject.prototype = Object.create(ParentObject.prototype);
+</pre><p></p>
+<p>Then the <code>ChildObject</code> received its own methods by chaining them onto its <code>prototype</code>:</p>
+<p></p><pre class=" language-js">ChildObject.prototype.methodName = function() {...};
+</pre><p></p>
+<p>It&apos;s possible to override an inherited method. It&apos;s done the same way - by adding a method to <code>ChildObject.prototype</code> using the same method name as the one to override.
+Here&apos;s an example of <code>Bird</code> overriding the <code>eat()</code> method inherited from <code>Animal</code>:</p>
+<p></p><pre class=" language-js">function Animal() { }
+Animal.prototype.eat = function() {
+  return &quot;nom nom nom&quot;;
+};
+function Bird() { }
+
+// Inherit all methods from Animal
+Bird.prototype = Object.create(Animal.prototype);
+
+// Bird.eat() overrides Animal.eat()
+Bird.prototype.eat = function() {
+  return &quot;peck peck peck&quot;;
+};
+</pre><p></p>
+<p>If you have an instance <code>let duck = new Bird();</code> and you call <code>duck.eat()</code>, this is how JavaScript looks for the method on <code>duck&#x2019;s</code> <code>prototype</code> chain:</p>
+<p></p><ol>
+<li>duck =&gt; Is eat() defined here? No.</li>
+<li>Bird =&gt; Is eat() defined here? =&gt; Yes. Execute it and stop searching.</li>
+<li>Animal =&gt; eat() is also defined, but JavaScript stopped searching before reaching this level.</li>
+<li>Object =&gt; JavaScript stopped searching before reaching this level.</li>
+</ol><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Override the <code>fly()</code> method for <code>Penguin</code> so that it returns &quot;Alas, this is a flightless bird.&quot;</p>
+</section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>penguin.fly()</code> should return the string &quot;Alas, this is a flightless bird.&quot;</li><li>🧪 The <code>bird.fly()</code> method should return &quot;I am flying!&quot;</li>
+            </ul>
+        </div>
+    </div>
+</div>

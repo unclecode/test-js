@@ -1,0 +1,28 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Destructuring Assignment to Pass an Object as a Function's Parameters</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In some cases, you can destructure the object in a function argument itself.</p>
+<p>Consider the code below:</p><p></p><pre class=" language-js">const profileUpdate = (profileData) =&gt; {
+  const { name, age, nationality, location } = profileData;
+  // do something with these variables
+}
+</pre><p></p>
+<p>This effectively destructures the object sent into the function. This can also be done in-place:</p>
+<p></p><pre class=" language-js">const profileUpdate = ({ name, age, nationality, location }) =&gt; {
+  /* do something with these fields */
+}
+</pre><p></p>
+<p>This removes some extra lines and makes our code look neat.
+This has the added benefit of not having to manipulate an entire object in a function &#x2014; only the fields that are needed are copied inside the function.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use destructuring assignment within the argument to the function <code>half</code> to send only <code>max</code> and <code>min</code> inside the function.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>stats</code> should be an <code>object</code>.</li><li>🧪 <code>half(stats)</code> should be <code>28.015</code></li><li>🧪 Destructuring should be used.</li><li>🧪 Destructured parameter should be used.</li>
+            </ul>
+        </div>
+    </div>
+</div>

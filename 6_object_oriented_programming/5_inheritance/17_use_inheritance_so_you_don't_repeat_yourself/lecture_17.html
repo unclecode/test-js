@@ -1,0 +1,49 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Inheritance So You Don't Repeat Yourself</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>There&apos;s a principle in programming called <dfn>Don&apos;t Repeat Yourself (DRY)</dfn>. The reason repeated code is a problem is because any change requires fixing code in multiple places. This usually means more work for programmers and more room for errors.</p>
+<p>Notice in the example below that the <code>describe</code> method is shared by <code>Bird</code> and <code>Dog</code>:</p><p></p><pre class=" language-js">Bird.prototype = {
+  constructor: Bird,
+  describe: function() {
+    console.log(&quot;My name is &quot; + this.name);
+  }
+};
+
+Dog.prototype = {
+  constructor: Dog,
+  describe: function() {
+    console.log(&quot;My name is &quot; + this.name);
+  }
+};
+</pre><p></p>
+<p>The <code>describe</code> method is repeated in two places. The code can be edited to follow the DRY principle by creating a <code>supertype</code> (or parent) called <code>Animal</code>:</p>
+<p></p><pre class=" language-js">function Animal() { };
+
+Animal.prototype = {
+  constructor: Animal, 
+  describe: function() {
+    console.log(&quot;My name is &quot; + this.name);
+  }
+};
+</pre><p></p>
+<p>Since <code>Animal</code> includes the <code>describe</code> method, you can remove it from <code>Bird</code> and <code>Dog</code>:</p>
+<p></p><pre class=" language-js">Bird.prototype = {
+  constructor: Bird
+};
+
+Dog.prototype = {
+  constructor: Dog
+};
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>The <code>eat</code> method is repeated in both <code>Cat</code> and <code>Bear</code>. Edit the code in the spirit of DRY by moving the <code>eat</code> method to the <code>Animal</code> <code>supertype</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>Animal.prototype</code> should have the <code>eat</code> property.</li><li>🧪 <code>Bear.prototype</code> should not have the <code>eat</code> property.</li><li>🧪 <code>Cat.prototype</code> should not have the <code>eat</code> property.</li>
+            </ul>
+        </div>
+    </div>
+</div>

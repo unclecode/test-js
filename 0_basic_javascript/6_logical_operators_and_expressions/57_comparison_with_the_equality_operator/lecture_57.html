@@ -1,0 +1,30 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Comparison with the Equality Operator</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>There are many <dfn>comparison operators</dfn> in JavaScript. All of these operators return a boolean <code>true</code> or <code>false</code> value.</p>
+<p>The most basic operator is the equality operator <code>==</code>. The equality operator compares two values and returns <code>true</code> if they&apos;re equivalent or <code>false</code> if they are not. Note that equality is different from assignment (<code>=</code>), which assigns the value at the right of the operator to a variable in the left.</p><p></p><pre class=" language-js">function equalityTest(myVal) {
+  if (myVal == 10) {
+     return &quot;Equal&quot;;
+  }
+  return &quot;Not Equal&quot;;
+}
+</pre><p></p>
+<p>If <code>myVal</code> is equal to <code>10</code>, the equality operator returns <code>true</code>, so the code in the curly braces will execute, and the function will return <code>&quot;Equal&quot;</code>. Otherwise, the function will return <code>&quot;Not Equal&quot;</code>.
+In order for JavaScript to compare two different <dfn>data types</dfn> (for example, <code>numbers</code> and <code>strings</code>), it must convert one type to another. This is known as &quot;Type Coercion&quot;. Once it does, however, it can compare terms as follows:</p>
+<p></p><pre class=" language-js">1   ==  1   // true
+1   ==  2   // false
+1   == &apos;1&apos;  // true
+&quot;3&quot; ==  3   // true
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Add the equality operator to the indicated line so that the function will return &quot;Equal&quot; when <code>val</code> is equivalent to <code>12</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>testEqual(10)</code> should return &quot;Not Equal&quot;</li><li>🧪 <code>testEqual(12)</code> should return &quot;Equal&quot;</li><li>🧪 <code>testEqual(&quot;12&quot;)</code> should return &quot;Equal&quot;</li><li>🧪 You should use the <code>==</code> operator</li>
+            </ul>
+        </div>
+    </div>
+</div>

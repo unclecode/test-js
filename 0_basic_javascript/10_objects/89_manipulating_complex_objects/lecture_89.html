@@ -1,0 +1,46 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Manipulating Complex Objects</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Sometimes you may want to store data in a flexible <dfn>Data Structure</dfn>. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of <dfn>strings</dfn>, <dfn>numbers</dfn>, <dfn>booleans</dfn>, <dfn>arrays</dfn>, <dfn>functions</dfn>, and <dfn>objects</dfn>.</p>
+<p>Here&apos;s an example of a complex data structure:</p><p></p><pre class=" language-js">var ourMusic = [
+  {
+    &quot;artist&quot;: &quot;Daft Punk&quot;,
+    &quot;title&quot;: &quot;Homework&quot;,
+    &quot;release_year&quot;: 1997,
+    &quot;formats&quot;: [ 
+      &quot;CD&quot;, 
+      &quot;Cassette&quot;, 
+      &quot;LP&quot;
+    ],
+    &quot;gold&quot;: true
+  }
+];
+</pre><p></p>
+<p>This is an array which contains one object inside. The object has various pieces of <dfn>metadata</dfn> about an album. It also has a nested <code>&quot;formats&quot;</code> array. If you want to add more album records, you can do this by adding records to the top level array.
+Objects hold data in a property, which has a key-value format. In the example above, <code>&quot;artist&quot;: &quot;Daft Punk&quot;</code> is a property that has a key of <code>&quot;artist&quot;</code> and a value of <code>&quot;Daft Punk&quot;</code>.
+<a href="http://www.json.org/" target="_blank">JavaScript Object Notation</a> or <code>JSON</code> is a related data interchange format used to store data.</p>
+<p></p><pre class=" language-json"><code class=" language-json">{
+  &quot;artist&quot;: &quot;Daft Punk&quot;,
+  &quot;title&quot;: &quot;Homework&quot;,
+  &quot;release_year&quot;: 1997,
+  &quot;formats&quot;: [ 
+    &quot;CD&quot;,
+    &quot;Cassette&quot;,
+    &quot;LP&quot;
+  ],
+  &quot;gold&quot;: true
+}
+</code></pre><p></p>
+<p><strong>Note</strong><br>You will need to place a comma after every object in the array, unless it is the last object in the array.</p>
+</section></div><hr><div><section id="instructions">
+<p>Add a new album to the <code>myMusic</code> array. Add <code>artist</code> and <code>title</code> strings, <code>release_year</code> number, and a <code>formats</code> array of strings.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>myMusic</code> should be an array</li><li>🧪 <code>myMusic</code> should have at least two elements</li><li>🧪 <code>myMusic[1]</code> should be an object</li><li>🧪 <code>myMusic[1]</code> should have at least 4 properties</li><li>🧪 <code>myMusic[1]</code> should contain an <code>artist</code> property which is a string</li><li>🧪 <code>myMusic[1]</code> should  contain a <code>title</code> property which is a string</li><li>🧪 <code>myMusic[1]</code> should contain a <code>release_year</code> property which is a number</li><li>🧪 <code>myMusic[1]</code> should contain a <code>formats</code> property which is an array</li><li>🧪 <code>formats</code> should be an array of strings with at least two elements</li>
+            </ul>
+        </div>
+    </div>
+</div>

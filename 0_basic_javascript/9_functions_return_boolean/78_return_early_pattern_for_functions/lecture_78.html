@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Return Early Pattern for Functions</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>When a <code>return</code> statement is reached, the execution of the current function stops and control returns to the calling location.</p><p><strong>Example</strong></p>
+<p></p><pre class=" language-js">function myFun() {
+  console.log(&quot;Hello&quot;);
+  return &quot;World&quot;;
+  console.log(&quot;byebye&quot;)
+}
+myFun();
+</pre><p></p>
+<p>The above outputs &quot;Hello&quot; to the console, returns &quot;World&quot;, but <code>&quot;byebye&quot;</code> is never output, because the function exits at the <code>return</code> statement.</p>
+</section></div><hr><div><section id="instructions">
+<p>Modify the function <code>abTest</code> so that if <code>a</code> or <code>b</code> are less than <code>0</code> the function will immediately exit with a value of <code>undefined</code>.</p><p><strong>Hint</strong><br>Remember that <a href="http://www.freecodecamp.org/challenges/understanding-uninitialized-variables" target="_blank"><code>undefined</code> is a keyword</a>, not a string.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>abTest(2,2)</code> should return a number</li><li>🧪 <code>abTest(2,2)</code> should return <code>8</code></li><li>🧪 <code>abTest(-2,2)</code> should return <code>undefined</code></li><li>🧪 <code>abTest(2,-2)</code> should return <code>undefined</code></li><li>🧪 <code>abTest(2,8)</code> should return <code>18</code></li><li>🧪 <code>abTest(3,3)</code> should return <code>12</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Introduction to the Debugging Challenges</h2>
+        <div id="dynamic">
+            <h2>Introduction to the Debugging Challenges</h2>
+<p>Debugging is a valuable and (unfortunately) necessary tool for programmers. It follows the testing phase of checking if your code works as intended, and discovering it does not. Debugging is the process of finding exactly what isn&apos;t working and fixing it.
+After spending time creating a brilliant block of code, it is tough realizing it may have errors. These issues generally come in three forms: </p>
+<ol>
+<li>syntax errors that prevent a program from running</li>
+<li>runtime errors when code fails to execute or has unexpected behavior</li>
+<li>semantic (or logical) errors when code doesn&apos;t do what it&apos;s meant to.</li>
+</ol>
+<p>Modern code editors (and experience) can help identify syntax errors. Semantic and runtime errors are harder to find. They may cause your program to crash, make it run forever, or give incorrect output. Think of debugging as trying to understand why your code is behaving the way it is.
+Example of a syntax error - often detected by the code editor:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">funtcion <span class="token function">willNotWork</span><span class="token punctuation">(</span> 
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Yuck&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// &quot;function&quot; keyword is misspelled and there&apos;s a missing parenthesis</span></code></pre></div>
+<p>Here&apos;s an example of a runtime error - often detected while the program executes:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">loopy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Hello, world!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Calling loopy starts an infinite loop, which may crash your browser</span></code></pre></div>
+<p>Example of a semantic error - often detected after testing code output:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">calcAreaOfRect</span><span class="token punctuation">(</span><span class="token parameter">w<span class="token punctuation">,</span> h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> w <span class="token operator">+</span> h<span class="token punctuation">;</span> <span class="token comment">// This should be w * h</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> myRectArea <span class="token operator">=</span> <span class="token function">calcAreaOfRect</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Correct syntax and the program executes, but this gives the wrong answer</span></code></pre></div>
+<p>Debugging is frustrating, but it helps to develop (and follow) a step-by-step approach to review your code. This means checking the intermediate values and types of variables to see if they are what they should be. You can start with a simple process of elimination.<br><br>For example, if function A works and returns what it&apos;s supposed to, then function B may have the issue. Or start checking values in a block of code from the middle to try to cut the search space in half. A problem in one spot indicates a bug in the first half of the code. If not, it&apos;s likely in the second.<br><br>This section will cover a couple helpful tools to find bugs, and some of the common forms they take. Fortunately, debugging is a learnable skill that just requires a little patience and practice to master.</p>
+        </div>
+        <div id="challenges">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+</div>

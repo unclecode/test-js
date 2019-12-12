@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Characters that Occur One or More Times</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated.</p>
+<p>You can use the <code>+</code> character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other.</p>
+<p>For example, <code>/a+/g</code> would find one match in <code>&quot;abc&quot;</code> and return <code>[&quot;a&quot;]</code>. Because of the <code>+</code>, it would also find a single match in <code>&quot;aabc&quot;</code> and return <code>[&quot;aa&quot;]</code>.</p>
+<p>If it were instead checking the string <code>&quot;abab&quot;</code>, it would find two matches and return <code>[&quot;a&quot;, &quot;a&quot;]</code> because the <code>a</code> characters are not in a row - there is a <code>b</code> between them. Finally, since there is no <code>&quot;a&quot;</code> in the string <code>&quot;bcd&quot;</code>, it wouldn&apos;t find a match.</p></section></div><hr><div><section id="instructions">
+<p>You want to find matches when the letter <code>s</code> occurs one or more times in <code>&quot;Mississippi&quot;</code>. Write a regex that uses the <code>+</code> sign.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>myRegex</code> should use the <code>+</code> sign to match one or more <code>s</code> characters.</li><li>🧪 Your regex <code>myRegex</code> should match 2 items.</li><li>🧪 The <code>result</code> variable should be an array with two matches of <code>&quot;ss&quot;</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

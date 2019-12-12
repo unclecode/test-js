@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Beginning String Patterns</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Prior challenges showed that regular expressions can be used to look for a number of matches. They are also used to search for patterns in specific positions in strings.</p>
+<p>In an earlier challenge, you used the caret character (<code>^</code>) inside a character set to create a negated character set in the form <code>[^thingsThatWillNotBeMatched]</code>. Outside of a character set, the caret is used to search for patterns at the beginning of strings.</p><p></p><pre class=" language-js">let firstString = &quot;Ricky is first and can be found.&quot;;
+let firstRegex = /^Ricky/;
+firstRegex.test(firstString);
+// Returns true
+let notFirst = &quot;You can&apos;t find Ricky now.&quot;;
+firstRegex.test(notFirst);
+// Returns false
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Use the caret character in a regex to find <code>&quot;Cal&quot;</code> only in the beginning of the string <code>rickyAndCal</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should search for <code>&quot;Cal&quot;</code> with a capital letter.</li><li>🧪 Your regex should not use any flags.</li><li>🧪 Your regex should match <code>&quot;Cal&quot;</code> at the beginning of the string.</li><li>🧪 Your regex should not match <code>&quot;Cal&quot;</code> in the middle of a string.</li>
+            </ul>
+        </div>
+    </div>
+</div>

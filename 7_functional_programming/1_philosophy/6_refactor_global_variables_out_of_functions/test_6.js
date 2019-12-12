@@ -1,0 +1,6 @@
+/**
+<code>bookList</code> should not change and still equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;On The Electrodynamics of Moving Bodies&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;]</code>.
+<code>newBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;On The Electrodynamics of Moving Bodies&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;, &quot;A Brief History of Time&quot;]</code>.
+<code>newerBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;]</code>.
+<code>newestBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;, &quot;A Brief History of Time&quot;]</code>.
+*/

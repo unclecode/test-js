@@ -1,0 +1,21 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use * to Import Everything from a File</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the <code>import * as</code> syntax. Here&apos;s an example where the contents of a file named <code>math_functions.js</code> are imported into a file in the same directory:</p><p></p><pre class=" language-js">import * as myMathModule from &quot;./math_functions.js&quot;;
+</pre><p></p>
+<p>The above <code>import</code> statement will create an object called <code>myMathModule</code>. This is just a variable name, you can name it anything. The object will contain all of the exports from <code>math_functions.js</code> in it, so you can access the functions like you would any other object property. Here&apos;s how you can use the <code>add</code> and <code>subtract</code> functions that were imported:</p>
+<p></p><pre class=" language-js">myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>The code in this file requires the contents of the file: <code>string_functions.js</code>, that is in the same directory as the current file. Use the <code>import * as</code> syntax to import everything from the file into an object called <code>stringFunctions</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should properly use <code>import * as</code> syntax.</li>
+            </ul>
+        </div>
+    </div>
+</div>

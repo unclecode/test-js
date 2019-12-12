@@ -1,0 +1,35 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Accessing Object Properties with Variables</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object&apos;s properties or when accessing a lookup table.</p>
+<p>Here is an example of using a variable to access a property:</p><p></p><pre class=" language-js">var dogs = {
+  Fido: &quot;Mutt&quot;,  Hunter: &quot;Doberman&quot;,  Snoopie: &quot;Beagle&quot;
+};
+var myDog = &quot;Hunter&quot;;
+var myBreed = dogs[myDog];
+console.log(myBreed); // &quot;Doberman&quot;
+</pre><p></p>
+<p>Another way you can use this concept is when the property&apos;s name is collected dynamically during the program execution, as follows:</p>
+<p></p><pre class=" language-js">var someObj = {
+  propName: &quot;John&quot;
+};
+function propPrefix(str) {
+  var s = &quot;prop&quot;;
+  return s + str;
+}
+var someProp = propPrefix(&quot;Name&quot;); // someProp now holds the value &apos;propName&apos;
+console.log(someObj[someProp]); // &quot;John&quot;
+</pre><p></p>
+<p>Note that we do <em>not</em> use quotes around the variable name when using it to access the property because we are using the <em>value</em> of the variable, not the <em>name</em>.</p>
+</section></div><hr><div><section id="instructions">
+<p>Use the <code>playerNumber</code> variable to look up player <code>16</code> in <code>testObj</code> using bracket notation. Then assign that name to the <code>player</code> variable.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>playerNumber</code> should be a number</li><li>🧪 The variable <code>player</code> should be a string</li><li>🧪 The value of <code>player</code> should be &quot;Montana&quot;</li><li>🧪 You should use bracket notation to access <code>testObj</code></li><li>🧪 You should not assign the value <code>Montana</code> to the variable <code>player</code> directly.</li><li>🧪 You should be using the variable <code>playerNumber</code> in your bracket notation</li>
+            </ul>
+        </div>
+    </div>
+</div>

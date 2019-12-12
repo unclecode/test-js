@@ -1,0 +1,19 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Access Property Names with Bracket Notation</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the first object challenge we mentioned the use of bracket notation as a way to access property values using the evaluation of a variable. For instance, imagine that our <code>foods</code> object is being used in a program for a supermarket cash register. We have some function that sets the <code>selectedFood</code> and we want to check our <code>foods</code> object for the presence of that food. This might look like:</p><p></p><pre class=" language-js">let selectedFood = getCurrentFood(scannedItem);
+let inventory = foods[selectedFood];
+</pre><p></p>
+<p>This code will evaluate the value stored in the <code>selectedFood</code> variable and return the value of that key in the <code>foods</code> object, or <code>undefined</code> if it is not present. Bracket notation is very useful because sometimes object properties are not known before runtime or we need to access them in a more dynamic way.</p>
+</section></div><hr><div><section id="instructions">
+<p>We&apos;ve defined a function, <code>checkInventory</code>, which receives a scanned item as an argument. Return the current value of the <code>scannedItem</code> key in the <code>foods</code> object. You can assume that only valid keys will be provided as an argument to <code>checkInventory</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>checkInventory</code> should be a function.</li><li>🧪 The <code>foods</code> object should have only the following key-value pairs: <code>apples: 25</code>, <code>oranges: 32</code>, <code>plums: 28</code>, <code>bananas: 13</code>, <code>grapes: 35</code>, <code>strawberries: 27</code>.</li><li>🧪 <code>checkInventory(&quot;apples&quot;)</code> should return <code>25</code>.</li><li>🧪 <code>checkInventory(&quot;bananas&quot;)</code> should return <code>13</code>.</li><li>🧪 <code>checkInventory(&quot;strawberries&quot;)</code> should return <code>27</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

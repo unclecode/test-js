@@ -1,0 +1,41 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Iterate Through the Keys of an Object with a for...in Statement</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Sometimes you may need to iterate through all the keys within an object. This requires a specific syntax in JavaScript called a <dfn>for...in</dfn> statement. For our <code>users</code> object, this could look like:</p>
+<p></p><pre class=" language-js">for (let user in users) {
+  console.log(user);
+}
+
+// logs:
+Alan
+Jeff
+Sarah
+Ryan
+</pre><p></p>
+<p>In this statement, we defined a variable <code>user</code>, and as you can see, this variable was reset during each iteration to each of the object&apos;s keys as the statement looped through the object, resulting in each user&apos;s name being printed to the console.
+<strong>NOTE:</strong> Objects do not maintain an ordering to stored keys like arrays do; thus a key&apos;s position on an object, or the relative order in which it appears, is irrelevant when referencing or accessing that key.</p>
+</section></div><hr><div><section id="instructions">
+<p>We&apos;ve defined a function <code>countOnline</code> which accepts one argument (a users object). Use a <dfn>for...in</dfn> statement within this function to loop through the users object passed into the function and return the number of users whose <code>online</code> property is set to <code>true</code>.  An example of a users object which could be passed to <code>countOnline</code> is shown below.  Each user will have an <code>online</code> property with either a <code>true</code> or <code>false</code> value.</p>
+<p></p><pre class=" language-js">{
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
+</pre><p></p>
+</section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The function <code>countOnline</code> should use a `for in` statement to iterate through the object keys of the object passed to it.</li><li>🧪 The function <code>countOnline</code> should return <code>1</code> when the object <code>{ Alan: { online: false }, Jeff: { online: true }, Sarah: { online: false } }</code> is passed to it</li><li>🧪 The function <code>countOnline</code> should return <code>2</code> when the object <code>{ Alan: { online: true }, Jeff: { online: false }, Sarah: { online: true } }</code> is passed to it</li><li>🧪 The function <code>countOnline</code> should return <code>0</code> when the object <code>{ Alan: { online: false }, Jeff: { online: false }, Sarah: { online: false } }</code> is passed to it</li>
+            </ul>
+        </div>
+    </div>
+</div>

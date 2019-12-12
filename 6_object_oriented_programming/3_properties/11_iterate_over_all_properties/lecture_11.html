@@ -1,0 +1,38 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Iterate Over All Properties</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You have now seen two kinds of properties: <code>own</code> properties and <code>prototype</code> properties. <code>Own</code> properties are defined directly on the object instance itself. And <code>prototype</code> properties are defined on the <code>prototype</code>.</p><p></p><pre class="  language-js">function Bird(name) {
+  this.name = name;  //own property
+}
+
+Bird.prototype.numLegs = 2; // prototype property
+
+let duck = new Bird(&quot;Donald&quot;);
+</pre><p></p>
+<p>Here is how you add <code>duck</code>&apos;s <code>own</code> properties to the array <code>ownProps</code> and <code>prototype</code> properties to the array <code>prototypeProps</code>:</p>
+<p></p><pre class="  language-js">let ownProps = [];
+let prototypeProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+
+console.log(ownProps); // prints [&quot;name&quot;]
+console.log(prototypeProps); // prints [&quot;numLegs&quot;]
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Add all of the <code>own</code> properties of <code>beagle</code> to the array <code>ownProps</code>. Add all of the <code>prototype</code> properties of <code>Dog</code> to the array <code>prototypeProps</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 The <code>ownProps</code> array should include <code>&quot;name&quot;</code>.</li><li>🧪 The <code>prototypeProps</code> array should include <code>&quot;numLegs&quot;</code>.</li><li>🧪 You should solve this challenge without using the built in method <code>Object.keys()</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

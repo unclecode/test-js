@@ -1,0 +1,25 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Specify Exact Number of Matches</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want a specific number of matches.</p>
+<p>To specify a certain number of patterns, just have that one number between the curly brackets.</p>
+<p>For example, to match only the word <code>&quot;hah&quot;</code> with the letter <code>a</code> <code>3</code> times, your regex would be <code>/ha{3}h/</code>.</p><p></p><pre class=" language-js">let A4 = &quot;haaaah&quot;;
+let A3 = &quot;haaah&quot;;
+let A100 = &quot;h&quot; + &quot;a&quot;.repeat(100) + &quot;h&quot;;
+let multipleHA = /ha{3}h/;
+multipleHA.test(A4); // Returns false
+multipleHA.test(A3); // Returns true
+multipleHA.test(A100); // Returns false
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Change the regex <code>timRegex</code> to match the word <code>&quot;Timber&quot;</code> only when it has four letter <code>m</code>&apos;s.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex should use curly brackets.</li><li>🧪 Your regex should not match <code>&quot;Timber&quot;</code></li><li>🧪 Your regex should not match <code>&quot;Timmber&quot;</code></li><li>🧪 Your regex should not match <code>&quot;Timmmber&quot;</code></li><li>🧪 Your regex should match <code>&quot;Timmmmber&quot;</code></li><li>🧪 Your regex should not match <code>&quot;Timber&quot;</code> with 30 <code>m</code>&apos;s in it.</li>
+            </ul>
+        </div>
+    </div>
+</div>

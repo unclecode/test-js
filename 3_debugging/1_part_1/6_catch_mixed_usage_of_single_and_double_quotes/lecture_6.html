@@ -1,0 +1,27 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Catch Mixed Usage of Single and Double Quotes</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>JavaScript allows the use of both single (<code>&apos;</code>) and double (<code>&quot;</code>) quotes to declare a string. Deciding which one to use generally comes down to personal preference, with some exceptions.</p>
+<p>Having two choices is great when a string has contractions or another piece of text that&apos;s in quotes. Just be careful that you don&apos;t close the string too early, which causes a syntax error.</p>
+<p>Here are some examples of mixing quotes:</p><p></p><pre class=" language-js">// These are correct:
+const grouchoContraction = &quot;I&apos;ve had a perfectly wonderful evening, but this wasn&apos;t it.&quot;;
+const quoteInString = &quot;Groucho Marx once said &apos;Quote me as saying I was mis-quoted.&apos;&quot;;
+// This is incorrect:
+const uhOhGroucho = &apos;I&apos;ve had a perfectly wonderful evening, but this wasn&apos;t it.&apos;;
+</pre><p></p>
+<p>Of course, it is okay to use only one style of quotes. You can escape the quotes inside the string by using the backslash (<code>\</code>) escape character:</p>
+<p></p><pre class=" language-js">// Correct use of same quotes:
+const allSameQuotes = &apos;I\&apos;ve had a perfectly wonderful evening, but this wasn\&apos;t it.&apos;;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Fix the string so it either uses different quotes for the <code>href</code> value, or escape the existing ones. Keep the double quote marks around the entire string.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should fix the quotes around the <code>href</code> value &quot;#Home&quot; by either changing or escaping them.</li><li>🧪 Your code should keep the double quotes around the entire string.</li>
+            </ul>
+        </div>
+    </div>
+</div>

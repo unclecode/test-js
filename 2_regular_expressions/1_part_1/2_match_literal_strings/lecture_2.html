@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Literal Strings</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In the last challenge, you searched for the word <code>&quot;Hello&quot;</code> using the regular expression <code>/Hello/</code>. That regex searched for a literal match of the string <code>&quot;Hello&quot;</code>. Here&apos;s another example searching for a literal match of the string <code>&quot;Kevin&quot;</code>:</p><p></p><pre class=" language-js">let testStr = &quot;Hello, my name is Kevin.&quot;;
+let testRegex = /Kevin/;
+testRegex.test(testStr);
+// Returns true
+</pre><p></p>
+<p>Any other forms of <code>&quot;Kevin&quot;</code> will not match. For example, the regex <code>/Kevin/</code> will not match <code>&quot;kevin&quot;</code> or <code>&quot;KEVIN&quot;</code>.</p>
+<p></p><pre class=" language-js">let wrongRegex = /kevin/;
+wrongRegex.test(testStr);
+// Returns false
+</pre><p></p>
+<p>A future challenge will show how to match those other forms as well.</p>
+</section></div><hr><div><section id="instructions">
+<p>Complete the regex <code>waldoRegex</code> to find <code>&quot;Waldo&quot;</code> in the string <code>waldoIsHiding</code> with a literal match.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>waldoRegex</code> should find <code>&quot;Waldo&quot;</code></li><li>🧪 Your regex <code>waldoRegex</code> should not search for anything else.</li><li>🧪 You should perform a literal string match with your regex.</li>
+            </ul>
+        </div>
+    </div>
+</div>

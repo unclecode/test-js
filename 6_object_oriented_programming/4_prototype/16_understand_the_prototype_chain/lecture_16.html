@@ -1,0 +1,32 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Understand the Prototype Chain</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>All objects in JavaScript (with a few exceptions) have a <code>prototype</code>. Also, an object&#x2019;s <code>prototype</code> itself is an object.</p><p></p><pre class=" language-js">function Bird(name) {
+  this.name = name;
+}
+
+typeof Bird.prototype; // =&gt; object
+</pre><p></p>
+<p>Because a <code>prototype</code> is an object, a <code>prototype</code> can have its own <code>prototype</code>! In this case, the <code>prototype</code> of <code>Bird.prototype</code> is <code>Object.prototype</code>:</p>
+<p></p><pre class=" language-js">Object.prototype.isPrototypeOf(Bird.prototype);
+// returns true
+</pre><p></p>
+<p>How is this useful? You may recall the <code>hasOwnProperty</code> method from a previous challenge:</p>
+<p></p><pre class=" language-js">let duck = new Bird(&quot;Donald&quot;);
+duck.hasOwnProperty(&quot;name&quot;); // =&gt; true
+</pre><p></p>
+<p>The <code>hasOwnProperty</code> method is defined in <code>Object.prototype</code>, which can be accessed by <code>Bird.prototype</code>, which can then be accessed by <code>duck</code>. This is an example of the <code>prototype</code> chain.
+In this <code>prototype</code> chain, <code>Bird</code> is the <code>supertype</code> for <code>duck</code>, while <code>duck</code> is the <code>subtype</code>. <code>Object</code> is a <code>supertype</code> for both <code>Bird</code> and <code>duck</code>.
+<code>Object</code> is a <code>supertype</code> for all objects in JavaScript. Therefore, any object can use the <code>hasOwnProperty</code> method.</p>
+</section></div><hr><div><section id="instructions">
+<p>Modify the code to show the correct prototype chain.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should show that <code>Object.prototype</code> is the prototype of <code>Dog.prototype</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

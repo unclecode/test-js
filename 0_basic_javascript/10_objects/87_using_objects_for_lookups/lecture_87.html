@@ -1,0 +1,32 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Using Objects for Lookups</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to &quot;lookup&quot; values rather than a <code>switch</code> statement or an <code>if/else</code> chain. This is most useful when you know that your input data is limited to a certain range.</p>
+<p>Here is an example of a simple reverse alphabet lookup:</p><p></p><pre class=" language-js">var alpha = {
+  1:&quot;Z&quot;,
+  2:&quot;Y&quot;,
+  3:&quot;X&quot;,
+  4:&quot;W&quot;,
+  ...
+  24:&quot;C&quot;,
+  25:&quot;B&quot;,
+  26:&quot;A&quot;
+};
+alpha[2]; // &quot;Y&quot;
+alpha[24]; // &quot;C&quot;
+
+var value = 2;
+alpha[value]; // &quot;Y&quot;
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Convert the switch statement into an object called <code>lookup</code>. Use it to look up <code>val</code> and assign the associated string to the <code>result</code> variable.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>phoneticLookup(&quot;alpha&quot;)</code> should equal <code>&quot;Adams&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;bravo&quot;)</code> should equal <code>&quot;Boston&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;charlie&quot;)</code> should equal <code>&quot;Chicago&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;delta&quot;)</code> should equal <code>&quot;Denver&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;echo&quot;)</code> should equal <code>&quot;Easy&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;foxtrot&quot;)</code> should equal <code>&quot;Frank&quot;</code></li><li>🧪 <code>phoneticLookup(&quot;&quot;)</code> should equal <code>undefined</code></li><li>🧪 You should not modify the <code>return</code> statement</li><li>🧪 You should not use <code>case</code>, <code>switch</code>, or <code>if</code> statements</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Catch Off By One Errors When Using Indexing</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p><dfn>Off by one errors</dfn> (sometimes called OBOE) crop up when you&apos;re trying to target a specific index of a string or array (to slice or access a segment), or when looping over the indices of them. JavaScript indexing starts at zero, not one, which means the last index is always one less than the length of the item. If you try to access an index equal to the length, the program may throw an &quot;index out of range&quot; reference error or print <code>undefined</code>.</p>
+<p>When you use string or array methods that take index ranges as arguments, it helps to read the documentation and understand if they are inclusive (the item at the given index is part of what&apos;s returned) or not. Here are some examples of off by one errors:</p><p></p><pre class=" language-js">let alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot;;
+let len = alphabet.length;
+for (let i = 0; i &lt;= len; i++) {
+  // loops one too many times at the end
+  console.log(alphabet[i]);
+}
+for (let j = 1; j &lt; len; j++) {
+  // loops one too few times and misses the first character at index 0
+  console.log(alphabet[j]);
+}
+for (let k = 0; k &lt; len; k++) {
+  // Goldilocks approves - this is just right
+  console.log(alphabet[k]);
+}
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Fix the two indexing errors in the following function so all the numbers 1 through 5 are printed to the console.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your code should set the initial condition of the loop so it starts at the first index.</li><li>🧪 Your code should fix the initial condition of the loop so that the index starts at 0.</li><li>🧪 Your code should set the terminal condition of the loop so it stops at the last index.</li><li>🧪 Your code should fix the terminal condition of the loop so that it stops at 1 before the length.</li>
+            </ul>
+        </div>
+    </div>
+</div>

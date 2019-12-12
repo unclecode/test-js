@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Letters of the Alphabet</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>You saw how you can use <dfn>character sets</dfn> to specify a group of characters to match, but that&apos;s a lot of typing when you need to match a large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple.</p>
+<p>Inside a character set, you can define a range of characters to match using a hyphen character: <code>-</code>.</p>
+<p>For example, to match lowercase letters <code>a</code> through <code>e</code> you would use <code>[a-e]</code>.</p><p></p><pre class=" language-js">let catStr = &quot;cat&quot;;
+let batStr = &quot;bat&quot;;
+let matStr = &quot;mat&quot;;
+let bgRegex = /[a-e]at/;
+catStr.match(bgRegex); // Returns [&quot;cat&quot;]
+batStr.match(bgRegex); // Returns [&quot;bat&quot;]
+matStr.match(bgRegex); // Returns null
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Match all the letters in the string <code>quoteSample</code>.</p><p><strong>Note</strong><br>Be sure to match both upper- and lowercase <strong>letters<strong>.
+</strong></strong></p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>alphabetRegex</code> should match 35 items.</li><li>🧪 Your regex <code>alphabetRegex</code> should use the global flag.</li><li>🧪 Your regex <code>alphabetRegex</code> should use the case insensitive flag.</li>
+            </ul>
+        </div>
+    </div>
+</div>

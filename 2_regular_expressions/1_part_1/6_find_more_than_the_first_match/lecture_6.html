@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Find More Than the First Match</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>So far, you have only been able to extract or search a pattern once.</p><p></p><pre class=" language-js">let testStr = &quot;Repeat, Repeat, Repeat&quot;;
+let ourRegex = /Repeat/;
+testStr.match(ourRegex);
+// Returns [&quot;Repeat&quot;]
+</pre><p></p>
+<p>To search or extract a pattern more than once, you can use the <code>g</code> flag.</p>
+<p></p><pre class=" language-js">let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);
+// Returns [&quot;Repeat&quot;, &quot;Repeat&quot;, &quot;Repeat&quot;]
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>Using the regex <code>starRegex</code>, find and extract both <code>&quot;Twinkle&quot;</code> words from the string <code>twinkleStar</code>.</p><p><strong>Note</strong><br>You can have multiple flags on your regex like <code>/search/gi</code></p>
+</section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>starRegex</code> should use the global flag <code>g</code></li><li>🧪 Your regex <code>starRegex</code> should use the case insensitive flag <code>i</code></li><li>🧪 Your match should match both occurrences of the word <code>&quot;Twinkle&quot;</code></li><li>🧪 Your match <code>result</code> should have two elements in it.</li>
+            </ul>
+        </div>
+    </div>
+</div>

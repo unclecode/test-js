@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Refactor Global Variables Out of Functions</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>So far, we have seen two distinct principles for functional programming:</p>
+<p>1) Don&apos;t alter a variable or object - create new variables and objects and return them if need be from a function.</p>
+<p>2) Declare function arguments - any computation inside a function depends only on the arguments, and not on any global object or variable.</p>
+<p>Adding one to a number is not very exciting, but we can apply these principles when working with arrays or more complex objects.</p></section></div><hr><div><section id="instructions">
+<p>Rewrite the code so the global array <code>bookList</code> is not changed inside either function. The <code>add</code> function should add the given <code>bookName</code> to the end of an array. The <code>remove</code> function should remove the given <code>bookName</code> from an array. Both functions should return an array, and any new parameters should be added before the <code>bookName</code> parameter.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>bookList</code> should not change and still equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;On The Electrodynamics of Moving Bodies&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;]</code>.</li><li>🧪 <code>newBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;On The Electrodynamics of Moving Bodies&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;, &quot;A Brief History of Time&quot;]</code>.</li><li>🧪 <code>newerBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;]</code>.</li><li>🧪 <code>newestBookList</code> should equal <code>[&quot;The Hound of the Baskervilles&quot;, &quot;Philosophi&#xE6; Naturalis Principia Mathematica&quot;, &quot;Disquisitiones Arithmeticae&quot;, &quot;A Brief History of Time&quot;]</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

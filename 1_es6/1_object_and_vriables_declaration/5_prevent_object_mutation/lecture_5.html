@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Prevent Object Mutation</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>As seen in the previous challenge, <code>const</code> declaration alone doesn&apos;t really protect your data from mutation. To ensure your data doesn&apos;t change, JavaScript provides a function <code>Object.freeze</code> to prevent data mutation.</p>
+<p>Once the object is frozen, you can no longer add, update, or delete properties from it. Any attempt at changing the object will be rejected without an error.</p><p></p><pre class=" language-js">let obj = {
+  name:&quot;FreeCodeCamp&quot;,
+  review:&quot;Awesome&quot;
+};
+Object.freeze(obj);
+obj.review = &quot;bad&quot;; // will be ignored. Mutation not allowed
+obj.newProp = &quot;Test&quot;; // will be ignored. Mutation not allowed
+console.log(obj); 
+// { name: &quot;FreeCodeCamp&quot;, review:&quot;Awesome&quot;}
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>In this challenge you are going to use <code>Object.freeze</code> to prevent mathematical constants from changing. You need to freeze the <code>MATH_CONSTANTS</code> object so that no one is able to alter the value of <code>PI</code>, add, or delete properties.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 You should not replace <code>const</code> keyword.</li><li>🧪 <code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).</li><li>🧪 You should not change original <code>MATH_CONSTANTS</code>.</li><li>🧪 <code>PI</code> should equal <code>3.14</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>

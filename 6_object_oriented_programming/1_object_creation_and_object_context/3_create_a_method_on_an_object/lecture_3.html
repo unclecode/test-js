@@ -1,0 +1,26 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Create a Method on an Object</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>Objects can have a special type of property, called a <dfn>method</dfn>.</p>
+<p>Methods are properties that are functions. This adds different behavior to an object. Here is the <code>duck</code> example with a method:</p><p></p><pre class="  language-js">let duck = {
+  name: &quot;Aflac&quot;,
+  numLegs: 2,
+  sayName: function() {return &quot;The name of this duck is &quot; + duck.name + &quot;.&quot;;}
+};
+duck.sayName();
+// Returns &quot;The name of this duck is Aflac.&quot;
+</pre><p></p>
+<p>The example adds the <code>sayName</code> method, which is a function that returns a sentence giving the name of the <code>duck</code>.
+Notice that the method accessed the <code>name</code> property in the return statement using <code>duck.name</code>. The next challenge will cover another way to do this.</p>
+</section></div><hr><div><section id="instructions">
+<p>Using the <code>dog</code> object, give it a method called <code>sayLegs</code>. The method should return the sentence &quot;This dog has 4 legs.&quot;</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 <code>dog.sayLegs()</code> should be a function.</li><li>🧪 <code>dog.sayLegs()</code> should return the given string - note that punctuation and spacing matter.</li>
+            </ul>
+        </div>
+    </div>
+</div>

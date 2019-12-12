@@ -1,0 +1,24 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Match Characters that Occur Zero or More Times</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>The last challenge used the plus <code>+</code> sign to look for characters that occur one or more times. There&apos;s also an option that matches characters that occur zero or more times.</p>
+<p>The character to do this is the asterisk or star: <code>*</code>.</p><p></p><pre class=" language-js">let soccerWord = &quot;gooooooooal!&quot;;
+let gPhrase = &quot;gut feeling&quot;;
+let oPhrase = &quot;over the moon&quot;;
+let goRegex = /go*/;
+soccerWord.match(goRegex); // Returns [&quot;goooooooo&quot;]
+gPhrase.match(goRegex); // Returns [&quot;g&quot;]
+oPhrase.match(goRegex); // Returns null
+</pre><p></p>
+</section></div><hr><div><section id="instructions">
+<p>For this challenge, <code>chewieQuote</code> has been initialized as &quot;Aaaaaaaaaaaaaaaarrrgh!&quot; behind the scenes. Create a regex <code>chewieRegex</code> that uses the <code>*</code> character to match an uppercase <code>&quot;A&quot;</code> character immediately followed by zero or more lowercase <code>&quot;a&quot;</code> characters in <code>chewieQuote</code>. Your regex does not need flags or character classes, and it should not match any of the other quotes.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 Your regex <code>chewieRegex</code> should use the <code>*</code> character to match zero or more <code>a</code> characters.</li><li>🧪 Your regex should match <code>&quot;A&quot;</code> in <code>chewieQuote</code>.</li><li>🧪 Your regex should match <code>&quot;Aaaaaaaaaaaaaaaa&quot;</code> in <code>chewieQuote</code>.</li><li>🧪 Your regex <code>chewieRegex</code> should match 16 characters in <code>chewieQuote</code>.</li><li>🧪 Your regex should not match any characters in &quot;He made a fair move. Screaming about it can&apos;t help you.&quot;</li><li>🧪 Your regex should not match any characters in &quot;Let him have it. It&apos;s not wise to upset a Wookiee.&quot;</li>
+            </ul>
+        </div>
+    </div>
+</div>
