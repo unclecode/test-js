@@ -1,0 +1,6 @@
+SyntaxError: unknown: Unexpected character '#' (1:43)
+
+> 1 | let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
+    |                                            ^
+  2 | console.log(innerHtml);
+  3 | 

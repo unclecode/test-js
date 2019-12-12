@@ -1,0 +1,7 @@
+SyntaxError: unknown: Unexpected token, expected "," (1:22)
+
+> 1 | let myArray = [1, 2, 3;
+    |                       ^
+  2 | let arraySum = myArray.reduce((previous, current =>  previous + current);
+  3 | console.log(`Sum of array values is: ${arraySum}`);
+  4 | 
