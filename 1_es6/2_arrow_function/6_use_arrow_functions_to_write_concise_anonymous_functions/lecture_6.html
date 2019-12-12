@@ -1,0 +1,31 @@
+<div id="wrapper">
+    <div id="content">
+        <h2 class="challenge-title">🚀 Use Arrow Functions to Write Concise Anonymous Functions</h2>
+        <div id="dynamic">
+            <html><head></head><body><div><section id="description">
+<p>In JavaScript, we often don&apos;t need to name our functions, especially when passing a function as an argument to another function. Instead, we create inline functions. We don&apos;t need to name these functions because we do not reuse them anywhere else.</p>
+<p>To achieve this, we often use the following syntax:</p><p></p><pre class=" language-js">const myFunc = function() {
+  const myVar = &quot;value&quot;;
+  return myVar;
+}
+</pre><p></p>
+<p>ES6 provides us with the syntactic sugar to not have to write anonymous functions this way. Instead, you can use <strong>arrow function syntax</strong>:</p>
+<p></p><pre class=" language-js">const myFunc = () =&gt; {
+  const myVar = &quot;value&quot;;
+  return myVar;
+}
+</pre><p></p>
+<p>When there is no function body, and only a return value, arrow function syntax allows you to omit the keyword <code>return</code> as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements:</p>
+<p></p><pre class=" language-js">const myFunc = () =&gt; &quot;value&quot;;
+</pre><p></p>
+<p>This code will still return <code>value</code> by default.</p>
+</section></div><hr><div><section id="instructions">
+<p>Rewrite the function assigned to the variable <code>magic</code> which returns a new <code>Date()</code> to use arrow function syntax. Also make sure nothing is defined using the keyword <code>var</code>.</p></section></div><hr></body></html>
+        </div>
+        <div id="challenges">
+            <ul>
+                <li>🧪 User should replace <code>var</code> keyword.</li><li>🧪 <code>magic</code> should be a constant variable (by using <code>const</code>).</li><li>🧪 <code>magic</code> should be a <code>function</code>.</li><li>🧪 <code>magic()</code> should return correct date.</li><li>🧪 <code>function</code> keyword should not be used.</li>
+            </ul>
+        </div>
+    </div>
+</div>
